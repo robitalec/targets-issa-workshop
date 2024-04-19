@@ -1,8 +1,12 @@
-# Reproducible workflows workshop
+# {targets} iSSA workshop
 
-## Developing a reproducible workflow in R using functions, {targets} and {renv}
+## Workshop on using the {targets} iSSA workflow 
 
-Originally developed for a
+[{targets} iSSA workflow](https://github.com/robitalec/targets-issa)
+
+
+This workshop is based on the [reproducible workflows workshop](https://github.com/robitalec/reproducible-workflows-workshop) 
+originally developed for a
 [workshop](https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop)
 at [CSEE 2023](https://www.beepeg2023.ca/) by:
 
@@ -10,105 +14,66 @@ at [CSEE 2023](https://www.beepeg2023.ca/) by:
 - Isabella C. Richmond (Concordia University)
 
 
-## Schedule
-
-Projects
-
--   Directories
--   READMEs
--   RStudio Projects
-
-*Short break*
-
-Functions
-
--   Introduction
--   Recommended approach
--   Checks
--   Options
-
-*Lunch break*
-
-{targets}
-
--   Introduction
--   Writing workflows
--   Visualizing
--   Running workflows
--   Extensions
-
-*Short break*
-
-{renv} + {conflicted}
-
--   Saving package versions
--   Checking conflicts
-
-
-## Learning goals
-
-Overall
-
--   Approach analyses in a more holistic way (whole project vs script by script)
--   Share data across projects and software versions with minimal stress 
--   Use workflows that reduce analysis errors and mental load
-
-Section 1: Projects
-
--   Construct a RStudio project that is thoroughly documented using file structure and data management best practices
--   Use RStudio projects to effectively share their own work, and use other people's
-
-Section 2: Functions
-
--   Read and understand structure of functions in R
--   Refactor code into functions that do one thing
--   Add tests and checks to ensure functions work and error when expected
--   Recognize the value of functions as chunks of code that are reusable and easier to debug
-
-Section 3: {targets}
-
--   (For a given project) map out relationships between inputs, outputs and analysis steps
--   Identify discrete chunks/steps and write corresponding (or use available) functions 
--   Execute a workflow in {targets} that reads in data, performs a function, and saves an output
--   Recognize the value of workflows for reducing mental load and improving efficiency
-
-Section 4: {renv} + {conflicted}
-
--   Use {renv} to preserve current package versions to ensure the environment is reproducible, portable and isolated
--   Use {conflicted} to detect conflicting function names
-
-
 ## Setup
 
-This workshop is aimed at improving our ability to use and create *reproducible workflows.* All the materials should be accessible from the side bar (slides, exercises, resources for further reading, and the link to the GitHub repository can be accessed by clicking on the GitHub icon).
+This workshop is aimed at improving our ability to use and modify the {targets}
+iSSA workflow. All the materials should be accessible from the side bar (slides,
+exercises, resources for further reading, and the link to the GitHub repository
+can be accessed by clicking on the GitHub icon).
 
-We don't have any strict dependencies on specific versions of R or R packages, but it would be good to have at least R version 4.0 and a recent version of RStudio. 
+We don't have any strict dependencies on specific versions of R or R packages, but it would be good to have at least R version 4.0 and a recent version of RStudio.
 
-We are using Quarto to build the workshop's website and exercises, so it could be helpful for you to install it too. If you don't have time to, you can always complete exercises in an R script - so no pressure. 
+We are using Quarto to build the workshop's website and exercises, so it could
+be helpful for you to install it too. If you don't have time to, you can always
+complete exercises in an R script - so no pressure.
 
-Install first the Quarto CLI from the [here](https://quarto.org/docs/get-started/) then the package with the command at the bottom.
-
+Install first the Quarto CLI from the
+[here](https://quarto.org/docs/get-started/) then the package with the command
+at the bottom.
 
 Please install the following packages (after updating R):
 
 ```r
 pkgs <- c(
-  'targets',
-  'igraph',
-  'data.table',
-  'dplyr',
-  'ggplot2',
-  'testthat',
-  'janitor',
-  'renv',
-  'rlang',
-  'conflicted',
-  'palmerpenguins',
-  'visNetwork',
-  'quarto',
-  'xml2',
-  'downlit',
-  'usethis'
+    'targets',
+    'tarchetypes',
+
+    'qs',
+    'visNetwork',
+    'igraph',
+
+    'data.table',
+    'dplyr',
+
+    'ggplot2',
+    'ggthemes',
+
+    'testthat',
+    'janitor',
+    'rlang',
+    'renv',
+    'conflicted',
+
+    'palmerpenguins',
+
+    'quarto',
+    'xml2',
+    'downlit',
+    'usethis',
+
+    'amt',
+    'sf',
+    'raster',
+
+    'parsedate',
+
+    'distanceto',
+
+    'glmmTMB',
+    'broom.mixed',
+    'tidyr',
+    'dplyr',
+    'tibble'
 )
 
 install.packages(pkgs)
@@ -122,11 +87,12 @@ library(usethis)
 
 # (Set your own destination directory)
 use_course(
-    'https://github.com/robitalec/reproducible-workflows-workshop/archive/refs/heads/participant.zip', 
-    destdir = '~/Documents')
+  'robitalec/targets-issa-workshop', 
+  destdir = '~/Documents'
+)
 ```
 
-Or by downloading and unziping the ZIP file at this link: <https://github.com/robitalec/reproducible-workflows-workshop/archive/refs/heads/participant.zip>. 
+Or by downloading and unzipping the ZIP file at this link: <https://github.com/robitalec/targets-issa-workshop>. 
 
 Then open up the RStudio project. 
 
@@ -225,5 +191,5 @@ Link to data (CSV):
 
 ## LICENSE
 
-This project is released under the GNU General Public License v3.0. Read it [here](https://github.com/robitalec/reproducible-workflows-workshop/blob/quarto/devel/LICENSE).
+This project is released under the GNU General Public License v3.0. Read it [here](https://github.com/robitalec/targets-issa-workshop/blob/quarto/devel/LICENSE).
 

@@ -3,8 +3,6 @@ project:
   output-dir: docs
   execute-dir: project
   resources:
-    - templates/README-dataset-template.md
-    - templates/README-data-project_template.md
     - templates/README-paper-template.md
     - templates/test_function.R
   render:
@@ -12,12 +10,12 @@ project:
     - "!paper/manuscript.qmd"
 
 website:
-  title: "Reproducible workflows workshop"
+  title: "{targets} iSSA workflow workshop"
 
   sidebar:
     tools:
       - icon: github
-        href: https://github.com/robitalec/reproducible-workflows-workshop
+        href: https://github.com/robitalec/targets-issa-workshop
     contents:
       - text: "Home"
         file: index.qmd
@@ -46,11 +44,7 @@ website:
         contents:
           - section: README
             contents:
-              - text: dataset-template.md
-                file: _templates/README/dataset-template.md
-              - text: dataset-project-template.md
-                href: _templates/README/data-project-template.md
-              - text: data-project_template.md
+              - text: project_template.md
                 href: _templates/README/paper-template.md
           - section: Functions
             contents:

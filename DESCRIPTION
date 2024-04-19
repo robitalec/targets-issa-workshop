@@ -1,5 +1,5 @@
-Package: reproducible.workflows.workshop
-Title: Reproducible Workflows Workshop
+Package: targets.issa.workshop
+Title: Targets iSSA Workshop
 Version: 0.0.1
 Authors@R: 
     c(person(given = "Alec L.",
@@ -11,12 +11,12 @@ Authors@R:
              family = "Richmond",
              role = "aut",
              comment = c(ORCID = "0000-0001-5079-8442")))
-Description:  Developing a reproducible workflow in R using functions, targets and renv.
+Description:  Workshop on using the targets iSSA workshop including introduction to functions and {targets}
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/robitalec/reproducible-workflows-workshop, https://robitalec.github.io/reproducible-workflows-workshop
+URL: https://github.com/robitalec/targets-issa-workshop, https://robitalec.github.io/targets-issa-workshop
 Depends: R (>= 4.0)
 Imports: targets,
     tarchetypes,
@@ -36,4 +36,6 @@ Imports: targets,
     quarto,
     parameters,
     fs,
-    usethis
+    usethis,
+    amt,
+    
