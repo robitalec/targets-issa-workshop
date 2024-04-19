@@ -161,6 +161,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./exercises/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./exercises/projects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projects</span></a>
   </div>
@@ -404,8 +410,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="why-targets" class="level2">
 <h2 class="anchored" data-anchor-id="why-targets">Why {targets}?</h2>
-<p>The {targets} package developed by Will Landau and peer reviewed by rOpenSci is an R package for defining pipelines/workflows, coordinating interdependent analytical steps, input and output data files, and iterating across patterns. Each step in a defined pipeline is saved and only rerun when preceeding steps have been modified, saving us and energy only rerunning what needs to. These features are incredibly well suited to iSSAs given their resource intensiveness and levels of analysis eg. individuals, seasons, etc.</p>
-<p>{targets} emphasizes a function oriented programming style that improves on scipt based workflows. Logical chunks of code can be written as functions that can be reused throughout and across projects. See the <a href="https://books.ropensci.org/targets/functions.html">Functions</a> chapter in the {targets} manual.</p>
+<p>The {targets} package developed by <a href="https://github.com/wlandau/">Will Landau</a> and peer reviewed by <a href="https://ropensci.org/">rOpenSci</a> is an R package for defining pipelines/workflows, coordinating interdependent analytical steps, input and output data files, and iterating across patterns. Each step in a defined pipeline is saved and only rerun when preceding steps have been modified, saving us and energy only rerunning what needs to. These features are incredibly well suited to iSSAs given their resource intensiveness and levels of analysis eg. individuals, seasons, etc.</p>
+<p>{targets} emphasizes a function oriented programming style that improves on script based workflows. Logical chunks of code can be written as functions that can be reused throughout and across projects. See the <a href="https://books.ropensci.org/targets/functions.html">Functions</a> chapter in the {targets} manual.</p>
 <p>Branching/iterating across patterns, eg. lists of files or data.frame columns, is flexible and built in. This means our functions can be typically built for one chunk (eg. a single individual) which is easily applied over every level using {targets}’s dynamic branching. See the <a href="https://books.ropensci.org/targets/dynamic.html">Dynamic branching</a> chapter in the {targets} manual.</p>
 <p>Once the pipeline is defined, {targets} orchestrates the tasks. No need to sit at the computer running a series of scripts - just start the pipeline and go for a walk outside or make yourself cup of coffee/tea.</p>
 </section>
