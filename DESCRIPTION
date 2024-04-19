@@ -11,7 +11,7 @@ Authors@R:
              family = "Richmond",
              role = "aut",
              comment = c(ORCID = "0000-0001-5079-8442")))
-Description:  Workshop to using the targets iSSA workshop including introduction to functions and {targets}
+Description:  Workshop on using the targets iSSA workshop including introduction to functions and {targets}
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

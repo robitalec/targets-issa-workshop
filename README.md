@@ -1,6 +1,6 @@
 # {targets} iSSA workshop
 
-## Workshop to using the {targets} iSSA workflow 
+## Workshop on using the {targets} iSSA workflow 
 
 [{targets} iSSA workflow](https://github.com/robitalec/targets-issa)
 
