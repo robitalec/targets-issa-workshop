@@ -21,6 +21,8 @@ website:
         file: index.qmd
       - section: Exercises
         contents:
+          - text: Introduction
+            file: "exercises/intro.qmd"
           - text: Projects
             file: "exercises/projects.html"
           - section: Functions
