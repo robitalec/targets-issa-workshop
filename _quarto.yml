@@ -24,7 +24,7 @@ website:
           - text: Introduction
             file: "exercises/intro.qmd"
           - text: Projects
-            file: "exercises/projects.html"
+            file: "exercises/projects.qmd"
           - section: Functions
             contents:
             - auto: "exercises/functions/*"
