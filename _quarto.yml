@@ -17,7 +17,7 @@ website:
   sidebar:
     tools:
       - icon: github
-        href: https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop
+        href: https://github.com/robitalec/reproducible-workflows-workshop
     contents:
       - text: "Home"
         file: index.qmd
