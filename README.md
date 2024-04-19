@@ -2,8 +2,8 @@
 
 ## Workshop on using the {targets} iSSA workflow 
 
-[{targets} iSSA workflow](https://github.com/robitalec/targets-issa)
-
+This workshop is focused on developing familiarity with using the [{targets} iSSA workflow](https://github.com/robitalec/targets-issa). The workflow is intended as a detailed example to be used alongside the [How To iSSA online book](https://issa-guild.github.io/book). 
+The details of iSSAs and how they are theory implemented in the workflow is well covered there, so this workshop centers on the code required to run the example iSSA and adapt it to your own data. 
 
 This workshop is based on the [reproducible workflows workshop](https://github.com/robitalec/reproducible-workflows-workshop) 
 originally developed for a
@@ -12,6 +12,17 @@ at [CSEE 2023](https://www.beepeg2023.ca/) by:
 
 - Alec L. Robitaille (Memorial University of Newfoundland and Labrador)
 - Isabella C. Richmond (Concordia University)
+
+
+## Why {targets}?
+
+The {targets} package developed by Will Landau and peer reviewed by rOpenSci is an R package for defining pipelines/workflows, coordinating interdependent analytical steps, input and output data files, and iterating across patterns. Each step in a defined pipeline is saved and only rerun when preceeding steps have been modified, saving us and energy only rerunning what needs to. These features are incredibly well suited to iSSAs given their resource intensiveness and levels of analysis eg. individuals, seasons, etc. 
+
+{targets} emphasizes a function oriented programming style that improves on scipt based workflows. Logical chunks of code can be written as functions that can be reused throughout and across projects. See the [Functions](https://books.ropensci.org/targets/functions.html) chapter in the {targets} manual. 
+
+Branching/iterating across patterns, eg. lists of files or data.frame columns, is flexible and built in. This means our functions can be typically built for one chunk (eg. a single individual) which is easily applied over every level using {targets}'s dynamic branching. See the [Dynamic branching](https://books.ropensci.org/targets/dynamic.html) chapter in the {targets} manual. 
+
+Once the pipeline is defined, {targets} orchestrates the tasks. No need to sit at the computer running a series of scripts - just start the pipeline and go for a walk outside or make yourself cup of coffee/tea.
 
 
 ## Setup
