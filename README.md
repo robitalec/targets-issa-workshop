@@ -1,6 +1,6 @@
-# Reproducible workflows workshop
+# {targets} iSSA workshop
 
-## Developing a reproducible workflow in R using functions, {targets} and {renv}
+## Workshop to using the {targets} iSSA workflow 
 
 Originally developed for a
 [workshop](https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop)
