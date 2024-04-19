@@ -1,6 +1,6 @@
-Package: CSEE.reproducible.workflows.workshop
-Title: Workshop for CSEE 2023 On Reproducible Workflows In R
-Version: 0.0.0.9000
+Package: reproducible.workflows.workshop
+Title: Reproducible Workflows Workshop
+Version: 0.0.1
 Authors@R: 
     c(person(given = "Alec L.",
              family = "Robitaille",
@@ -16,7 +16,7 @@ License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop, https://robitalec.github.io/2023-CSEE-reproducible-workflows-workshop
+URL: https://github.com/robitalec/reproducible-workflows-workshop, https://robitalec.github.io/reproducible-workflows-workshop
 Depends: R (>= 4.0)
 Imports: targets,
     tarchetypes,

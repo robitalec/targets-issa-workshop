@@ -1,8 +1,10 @@
 # Reproducible workflows workshop
 
-Workshop at [CSEE 2023](https://www.beepeg2023.ca/): developing a reproducible workflow in R using functions, {targets} and {renv}
+## Developing a reproducible workflow in R using functions, {targets} and {renv}
 
-Developed and delivered by:
+Originally developed for a
+[workshop](https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop)
+at [CSEE 2023](https://www.beepeg2023.ca/) by:
 
 - Alec L. Robitaille (Memorial University of Newfoundland and Labrador)
 - Isabella C. Richmond (Concordia University)
@@ -120,11 +122,11 @@ library(usethis)
 
 # (Set your own destination directory)
 use_course(
-    'https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop/archive/refs/heads/participant.zip', 
+    'https://github.com/robitalec/reproducible-workflows-workshop/archive/refs/heads/participant.zip', 
     destdir = '~/Documents')
 ```
 
-Or by downloading and unziping the ZIP file at this link: <https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop/archive/refs/heads/participant.zip>. 
+Or by downloading and unziping the ZIP file at this link: <https://github.com/robitalec/reproducible-workflows-workshop/archive/refs/heads/participant.zip>. 
 
 Then open up the RStudio project. 
 
@@ -223,5 +225,5 @@ Link to data (CSV):
 
 ## LICENSE
 
-This project is released under the GNU General Public License v3.0. Read it [here](https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop/blob/quarto/devel/LICENSE).
+This project is released under the GNU General Public License v3.0. Read it [here](https://github.com/robitalec/reproducible-workflows-workshop/blob/quarto/devel/LICENSE).
 
