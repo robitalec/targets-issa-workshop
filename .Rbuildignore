@@ -11,3 +11,5 @@
 ^quarto\.yml$
 ^_targets\.R$
 ^index\.qmd$
+^.*\.Rproj$
+^\.Rproj\.user$
