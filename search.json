@@ -57,111 +57,111 @@
   {
     "objectID": "resources/05-conflicted.html",
     "href": "resources/05-conflicted.html",
-    "title": "{conflicted}",
+    "title": "conflicted",
     "section": "",
-    "text": "{conflicted}\nThe {conflicted} package is a substantially simpler package than {targets} and {renv}. The {conflicted} documentation has everything we need, but also check out this {conflicted} blog post for some details about why {conflicted} was developed.",
+    "text": "conflicted\nThe {conflicted} package is a substantially simpler package than {targets} and {renv}. The {conflicted} documentation has everything we need, but also check out this {conflicted} blog post for some details about why {conflicted} was developed.",
     "crumbs": [
       "Resources",
-      "05 Conflicted"
+      "conflicted"
     ]
   },
   {
     "objectID": "resources/03-targets.html",
     "href": "resources/03-targets.html",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "The {targets} documentation and help manual should be the first places to look for details on {targets}. We’ll highlight some pages and links below relevant to the workshop, but be sure to spend time looking through these resources. This is a great example of an R package that has been very thoroughly and thoughtfully documented covering everything from beginner examples to the minutiae of how the package is designed and orchestrates workflows.\n\n\nThis help page is a great place to start when you are looking for help using {targets}. It details things to do before posting, and when you have decided to post a question, where to post it. The {targets} developer prefers using GitHub Discussion Groups for troubleshooting and discussions instead of GitHub Issues.\n\n\n{targets} has a very active discussion group with plenty of past solutions and discussions to search through when you are looking for help.\n\n\n\n\nThe debugging page is helpful for debugging {targets} workflows, especially when they get bigger and more complicated. Debugging in {targets} is different is a good place to start.\n\n\n\nSome select documentation pages from the {targets} documentation:\n\ntar_target(): targets!\ntar_make(): run the workflow\ntar_meta(): metadata on the workflow including errors, warnings, run times\ntar_read(): read a target\ntar_load(): load a target\ntar_visnetwork(): visualize the dependency graph between targets, functions, and objects\ntar_option_set(): sets options for when the {targets} workflow is run\n\nBonus:\n\nuse_targets(): setups a project to use {targets}\ntar_github_actions(): writes a GitHub Actions workflow to run the {targets} workflow on every push to GitHub\n\n\n\nThis vignette is an high-level summary of the features of {targets}.\n\n\n\n\nThe {targets} R package user manual\nThis is the most complete guide to using {targets}. It has info on most of the questions that you will have (although can be complicated - be patient with yourself!). It explains what a target is, best practices for functions, and why error messages can be less intuitive in your {targets} workflow among many other things.\n\n\n\n\n\nThis is an official half-day interactive tutorial on {targets}. It is accompanied by:\n\nCode repository: https://github.com/wlandau/targets-tutorial\nPosit Cloud workspace to try it out without any required downloads or installation: https://posit.cloud/content/1699460\nIntroductory slides: https://wlandau.github.io/targets-tutorial/#1\n\n\n\n\n\n\n\nThis 4 minute video walkthrough gives a short example of how {targets} can be used. It is accompanied by:\n\nUser Manual: A walkthrough to get started\nCode repository: https://github.com/wlandau/targets-four-minutes\nPosit Cloud workspace to try it out without any required downloads or installation: https://posit.cloud/content/3946303\n\n\n\n\n\n\n\n\n\n{tarchetypes} extends {targets} by providing functions to do complex tasks with shortcuts and simpler syntax, making your life easier. For example:\n\ntar_group_by: define groups in a data.frame to split subsequent targets by\ntar_render, tar_quarto: literate programming with {rmarkdown} or {quarto}\ntar_file_read(): tracks a local file and reads the contents\n\nSimilar to {targets}, {tarchetypes} has a very active Discussion Group with plenty of discussions to search through for solutions, tips and tricks.\n\nDocumentation: https://docs.ropensci.org/tarchetypes/\nDiscussion Group: https://github.com/ropensci/tarchetypes/discussions\n\n\n\n\n{stantargets} is a package extending {targets} for Bayesian data analysis with Stan through {cmdstanr}.\n\nDocumentation: https://docs.ropensci.org/stantargets/\nDiscussion Group: https://github.com/ropensci/stantargets/discussions\n\n\n\n\n{jagstargets} is a package extending {targets} for Bayesian data analysis with JAGS through {R2jags}.\n\nDocumentation: https://wlandau.github.io/jagstargets\nDiscussion Group: https://github.com/wlandau/jagstargets/discussions\n\n\n\n\n{gittargets} is a package extending {targets} for data version control.\n\nDocumentation: https://github.com/ropensci/gittargets\nDiscussion Group: https://github.com/ropensci/gittargets/discussions\n\n\n\n\n\nTarget factories are an advanced approach to making pipeline construction easier. Instead of writing many tar_target() calls, a user can replace them with a call to a “target factory”. tar_file_read() from {tarchetypes} is a simple example of this - one call to tar_file_read() creates targets tracking the local file for changes and another to read the local file in with the provided command.\n\n\n\n\n{tflow} is Miles McBain’s opinionated template for {targets} workflows.\n\nCode repository: An opinionated lightweight template for smooth targets flows.",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
     "objectID": "resources/03-targets.html#help",
     "href": "resources/03-targets.html#help",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "This help page is a great place to start when you are looking for help using {targets}. It details things to do before posting, and when you have decided to post a question, where to post it. The {targets} developer prefers using GitHub Discussion Groups for troubleshooting and discussions instead of GitHub Issues.\n\n\n{targets} has a very active discussion group with plenty of past solutions and discussions to search through when you are looking for help.",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
     "objectID": "resources/03-targets.html#debugging",
     "href": "resources/03-targets.html#debugging",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "The debugging page is helpful for debugging {targets} workflows, especially when they get bigger and more complicated. Debugging in {targets} is different is a good place to start.",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
     "objectID": "resources/03-targets.html#documentation",
     "href": "resources/03-targets.html#documentation",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "Some select documentation pages from the {targets} documentation:\n\ntar_target(): targets!\ntar_make(): run the workflow\ntar_meta(): metadata on the workflow including errors, warnings, run times\ntar_read(): read a target\ntar_load(): load a target\ntar_visnetwork(): visualize the dependency graph between targets, functions, and objects\ntar_option_set(): sets options for when the {targets} workflow is run\n\nBonus:\n\nuse_targets(): setups a project to use {targets}\ntar_github_actions(): writes a GitHub Actions workflow to run the {targets} workflow on every push to GitHub\n\n\n\nThis vignette is an high-level summary of the features of {targets}.",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
     "objectID": "resources/03-targets.html#user-manual",
     "href": "resources/03-targets.html#user-manual",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "The {targets} R package user manual\nThis is the most complete guide to using {targets}. It has info on most of the questions that you will have (although can be complicated - be patient with yourself!). It explains what a target is, best practices for functions, and why error messages can be less intuitive in your {targets} workflow among many other things.",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
     "objectID": "resources/03-targets.html#courses",
     "href": "resources/03-targets.html#courses",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "This is an official half-day interactive tutorial on {targets}. It is accompanied by:\n\nCode repository: https://github.com/wlandau/targets-tutorial\nPosit Cloud workspace to try it out without any required downloads or installation: https://posit.cloud/content/1699460\nIntroductory slides: https://wlandau.github.io/targets-tutorial/#1",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
     "objectID": "resources/03-targets.html#videos",
     "href": "resources/03-targets.html#videos",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "This 4 minute video walkthrough gives a short example of how {targets} can be used. It is accompanied by:\n\nUser Manual: A walkthrough to get started\nCode repository: https://github.com/wlandau/targets-four-minutes\nPosit Cloud workspace to try it out without any required downloads or installation: https://posit.cloud/content/3946303",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
     "objectID": "resources/03-targets.html#extensions",
     "href": "resources/03-targets.html#extensions",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "{tarchetypes} extends {targets} by providing functions to do complex tasks with shortcuts and simpler syntax, making your life easier. For example:\n\ntar_group_by: define groups in a data.frame to split subsequent targets by\ntar_render, tar_quarto: literate programming with {rmarkdown} or {quarto}\ntar_file_read(): tracks a local file and reads the contents\n\nSimilar to {targets}, {tarchetypes} has a very active Discussion Group with plenty of discussions to search through for solutions, tips and tricks.\n\nDocumentation: https://docs.ropensci.org/tarchetypes/\nDiscussion Group: https://github.com/ropensci/tarchetypes/discussions\n\n\n\n\n{stantargets} is a package extending {targets} for Bayesian data analysis with Stan through {cmdstanr}.\n\nDocumentation: https://docs.ropensci.org/stantargets/\nDiscussion Group: https://github.com/ropensci/stantargets/discussions\n\n\n\n\n{jagstargets} is a package extending {targets} for Bayesian data analysis with JAGS through {R2jags}.\n\nDocumentation: https://wlandau.github.io/jagstargets\nDiscussion Group: https://github.com/wlandau/jagstargets/discussions\n\n\n\n\n{gittargets} is a package extending {targets} for data version control.\n\nDocumentation: https://github.com/ropensci/gittargets\nDiscussion Group: https://github.com/ropensci/gittargets/discussions\n\n\n\n\n\nTarget factories are an advanced approach to making pipeline construction easier. Instead of writing many tar_target() calls, a user can replace them with a call to a “target factory”. tar_file_read() from {tarchetypes} is a simple example of this - one call to tar_file_read() creates targets tracking the local file for changes and another to read the local file in with the provided command.",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
     "objectID": "resources/03-targets.html#tflow",
     "href": "resources/03-targets.html#tflow",
-    "title": "{targets}",
+    "title": "targets",
     "section": "",
     "text": "{tflow} is Miles McBain’s opinionated template for {targets} workflows.\n\nCode repository: An opinionated lightweight template for smooth targets flows.",
     "crumbs": [
       "Resources",
-      "[Help](https://books.ropensci.org/targets/help.html)"
+      "targets"
     ]
   },
   {
@@ -375,148 +375,6 @@
     ]
   },
   {
-    "objectID": "exercises/functions/04-functions-control-flow.html",
-    "href": "exercises/functions/04-functions-control-flow.html",
-    "title": "Controlling flow",
-    "section": "",
-    "text": "Conditionals in functions are used to modify how a function runs, determine what output to return or to return warnings and errors depending on logical statements. We’ll look at if and else, as well as functions for combining multiple logical statements. if and else can be used instead of stopifnot, usually in cases where logical statements are more complex or a more elaborate error message is required.\nThe following functions are essential for controlling flow in R:\n\n\nif else (and else if)\n\n||, && combine multiple logical expressions and short-circuit when || sees the first true and && sees the first false\n\n|, & are vectorized and cannot be directly used in an if statement unless you also use any, all\n\n\n\n\nInstruction: write a series of if else conditional statements for the following objects then consult the solution to check your work.\nNumeric\n\nif x is a numeric, return x as a character\nprint ‘positive’ if x is greater than 0, else print ‘negative’ if x is less than 0\nif x / 3 returns a remainder (hint: see ?`%%`), print the remainder\n\n\nx &lt;- 10\n\n\nShow solution\n\nif (is.numeric(x)) {\n    as.character(x)\n}\n\n[1] \"10\"\n\nif (x &gt; 0) {\n    print('positive')\n} else if (x &lt; 0) {\n    print('negative')\n}\n\n[1] \"positive\"\n\nif (x %% 3) {\n    print(x %% 3)\n}\n\n[1] 1\n\n\ndata.frame\n\nreturn the column ‘colors’ if it exists in DF\nif type is ‘histogram’, plot a histogram of DF’s column ‘numbers’\n\n\nDF &lt;- data.frame(colors = c('red', 'green', 'blue'), numbers = c(42.1, 2L, 10))\ntype &lt;- 'histogram'\n\n\nShow solution\n\nif ('colors' %in% colnames(DF)) {\n    DF['colors']\n}\n\n  colors\n1    red\n2  green\n3   blue\n\nif (type == 'histogram') {\n    hist(DF$numbers)\n}\n\n\n\n\n\n\n\n\nNext we’ll write a new function that processes our prepared CSV files.\nLet’s say we wanted to summarize the number of adults and chicks counted by island. First, write a function to sum the ‘adults’ and ‘chicks’ columns in the data.frame. Use the example data that we prepared with our prepare_csv function.\nFollow the steps from our approach to developing functions:\n\nSetup the function\n\nMake a function script in the R/ directory named sum_counts.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_sum_counts.R.\nLoad any required packages (library(package))\nSource the function (source('R/function.R))\nLoad example data and/or arguments for the function\n\n\n\nSince we have already built a function for preparing CSV files, use it in your test script:\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\nprep_counts &lt;- prepare_csv(path_counts)\n\nAdd a new section ‘Development’ in the test script (tests/test_sum_counts.R) to develop the body of your function. Use the prepared CSV data as shown above, add the code to your function sum_counts() and test!\n\nHints: by\n\n{data.table} has an argument by\n{dplyr} has an alternative to group_by for passing character column names called group_by_at\nNext steps:\n\ndecide if it is better for you (or a potential user) to set the columns that we calculate the sum by inside the function (fixed) or as an argument (flexible) - try both options\nadd a filter argument filter_gt_year (default set to NULL) and when it is not NULL, filter the data only greater than the value provided\n\nTest these as you go in your test script tests/test_sum_counts.R.\n\nHints: defaults\n\nTo set a function’s argument to default, use the syntax argument = default_value. For example:\nfunction(x = 1, y = 2, z = 3) {\n\n}\n\nAdd checks to your functions plot_xy() and sum_counts():\n\nuse the arguments x_col and y_col to also update the axis labels in plot_xy() (base R)\nuse a new argument color_col to provide a column in plot_xy()\n\nbuild a plot function that plots the output of sum_counts()",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Controlling flow"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/04-functions-control-flow.html#exercises-function-conditionals",
-    "href": "exercises/functions/04-functions-control-flow.html#exercises-function-conditionals",
-    "title": "Controlling flow",
-    "section": "",
-    "text": "Instruction: write a series of if else conditional statements for the following objects then consult the solution to check your work.\nNumeric\n\nif x is a numeric, return x as a character\nprint ‘positive’ if x is greater than 0, else print ‘negative’ if x is less than 0\nif x / 3 returns a remainder (hint: see ?`%%`), print the remainder\n\n\nx &lt;- 10\n\n\nShow solution\n\nif (is.numeric(x)) {\n    as.character(x)\n}\n\n[1] \"10\"\n\nif (x &gt; 0) {\n    print('positive')\n} else if (x &lt; 0) {\n    print('negative')\n}\n\n[1] \"positive\"\n\nif (x %% 3) {\n    print(x %% 3)\n}\n\n[1] 1\n\n\ndata.frame\n\nreturn the column ‘colors’ if it exists in DF\nif type is ‘histogram’, plot a histogram of DF’s column ‘numbers’\n\n\nDF &lt;- data.frame(colors = c('red', 'green', 'blue'), numbers = c(42.1, 2L, 10))\ntype &lt;- 'histogram'\n\n\nShow solution\n\nif ('colors' %in% colnames(DF)) {\n    DF['colors']\n}\n\n  colors\n1    red\n2  green\n3   blue\n\nif (type == 'histogram') {\n    hist(DF$numbers)\n}\n\n\n\n\n\n\n\n\nNext we’ll write a new function that processes our prepared CSV files.\nLet’s say we wanted to summarize the number of adults and chicks counted by island. First, write a function to sum the ‘adults’ and ‘chicks’ columns in the data.frame. Use the example data that we prepared with our prepare_csv function.\nFollow the steps from our approach to developing functions:\n\nSetup the function\n\nMake a function script in the R/ directory named sum_counts.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_sum_counts.R.\nLoad any required packages (library(package))\nSource the function (source('R/function.R))\nLoad example data and/or arguments for the function\n\n\n\nSince we have already built a function for preparing CSV files, use it in your test script:\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\nprep_counts &lt;- prepare_csv(path_counts)\n\nAdd a new section ‘Development’ in the test script (tests/test_sum_counts.R) to develop the body of your function. Use the prepared CSV data as shown above, add the code to your function sum_counts() and test!\n\nHints: by\n\n{data.table} has an argument by\n{dplyr} has an alternative to group_by for passing character column names called group_by_at\nNext steps:\n\ndecide if it is better for you (or a potential user) to set the columns that we calculate the sum by inside the function (fixed) or as an argument (flexible) - try both options\nadd a filter argument filter_gt_year (default set to NULL) and when it is not NULL, filter the data only greater than the value provided\n\nTest these as you go in your test script tests/test_sum_counts.R.\n\nHints: defaults\n\nTo set a function’s argument to default, use the syntax argument = default_value. For example:\nfunction(x = 1, y = 2, z = 3) {\n\n}\n\nAdd checks to your functions plot_xy() and sum_counts():\n\nuse the arguments x_col and y_col to also update the axis labels in plot_xy() (base R)\nuse a new argument color_col to provide a column in plot_xy()\n\nbuild a plot function that plots the output of sum_counts()",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Controlling flow"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/02-functions-development.html",
-    "href": "exercises/functions/02-functions-development.html",
-    "title": "Developing functions",
-    "section": "",
-    "text": "The setup:\n\nSetup the function\n\nMake a function script in the R/ directory named function_name.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_function_name.R.\nLoad any required packages (library(package))\nSource the function (source('R/function_name.R))\nLoad example data and/or arguments for the function\n\n\n\nWe’ll use the following approach for developing functions:\n\nFill in the body of the function, state the returned object, add arguments in the function script (R/function_name.R)\nAdd a test that uses the function with the example data\nRun the entire test script\nCheck the output, note required changes, errors, warnings, etc\nHead back to the function script to make changes\nRun the entire test script\n\nCheck the test output, tweak the function, repeat!\nThis process of editing two files might seem like extra work, but we recommend separating the function’s definition from the bits of code we use to test it. Think of the test script as your isolated playground to test and develop the function and your function script as the sheltered environment where you carefully tweak the function. You can also use this test script as a place to develop the function using the same inputs and arguments as the function. Keeping these parts separate can help to avoid mysterious errors and general chaos!\n\n\nInstruction: setup your function script and test script for your new function prepare_csv().\nUse whichever function you prefer for reading CSVs (eg. data.table::fread(), or readr::read_csv()). For cleaning column names, we’ll use the function clean_names() from the {janitor} package.\nNote: since we are writing a function to read the data in, we’ll test the function with the data’s path instead. We’ll use the example dataset for adult and chick counts described in the README. For example:\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\n\nUse the section “Development” in your test script (tests/test_prepare_csv.R) to develop the body of your function. Use path_counts and the function for reading CSVs, then the clean_names() function from the {janitor} package. Add the code to the body of your function prepare_csv() and test!\n\nHints\n\nThis function has two steps: reading a CSV from a path and cleaning the column names.\nBoth of these steps are going to use functions from external packages, so we only have to put them together.\nThe function’s arguments should include the path to the CSV.\nFirst, take the path and pass it to the function for reading CSVs.\nThen, pass the data.frame returned to the clean_names() function from the {janitor} package.",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Developing functions"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/02-functions-development.html#setup",
-    "href": "exercises/functions/02-functions-development.html#setup",
-    "title": "Developing functions",
-    "section": "",
-    "text": "The setup:\n\nSetup the function\n\nMake a function script in the R/ directory named function_name.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_function_name.R.\nLoad any required packages (library(package))\nSource the function (source('R/function_name.R))\nLoad example data and/or arguments for the function",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Developing functions"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/02-functions-development.html#approach",
-    "href": "exercises/functions/02-functions-development.html#approach",
-    "title": "Developing functions",
-    "section": "",
-    "text": "We’ll use the following approach for developing functions:\n\nFill in the body of the function, state the returned object, add arguments in the function script (R/function_name.R)\nAdd a test that uses the function with the example data\nRun the entire test script\nCheck the output, note required changes, errors, warnings, etc\nHead back to the function script to make changes\nRun the entire test script\n\nCheck the test output, tweak the function, repeat!\nThis process of editing two files might seem like extra work, but we recommend separating the function’s definition from the bits of code we use to test it. Think of the test script as your isolated playground to test and develop the function and your function script as the sheltered environment where you carefully tweak the function. You can also use this test script as a place to develop the function using the same inputs and arguments as the function. Keeping these parts separate can help to avoid mysterious errors and general chaos!",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Developing functions"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/02-functions-development.html#exercises-function-development",
-    "href": "exercises/functions/02-functions-development.html#exercises-function-development",
-    "title": "Developing functions",
-    "section": "",
-    "text": "Instruction: setup your function script and test script for your new function prepare_csv().\nUse whichever function you prefer for reading CSVs (eg. data.table::fread(), or readr::read_csv()). For cleaning column names, we’ll use the function clean_names() from the {janitor} package.\nNote: since we are writing a function to read the data in, we’ll test the function with the data’s path instead. We’ll use the example dataset for adult and chick counts described in the README. For example:\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\n\nUse the section “Development” in your test script (tests/test_prepare_csv.R) to develop the body of your function. Use path_counts and the function for reading CSVs, then the clean_names() function from the {janitor} package. Add the code to the body of your function prepare_csv() and test!\n\nHints\n\nThis function has two steps: reading a CSV from a path and cleaning the column names.\nBoth of these steps are going to use functions from external packages, so we only have to put them together.\nThe function’s arguments should include the path to the CSV.\nFirst, take the path and pass it to the function for reading CSVs.\nThen, pass the data.frame returned to the clean_names() function from the {janitor} package.",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Developing functions"
-    ]
-  },
-  {
-    "objectID": "exercises/conflicted.html",
-    "href": "exercises/conflicted.html",
-    "title": "{conflicted}",
-    "section": "",
-    "text": "The {conflicted} package provides an alternative to R’s default management of conflicts - to just use the most recently loaded package. {conflicted} instead highlights the conflict when it occurs as an error, forcing the user to be explicit about which function they would prefer to use. It also provides a function to “scout” potential conflicts, to make decisions about preference before conflicts are hit.\n\n\nAt its simplest, using {conflicted} is just loading it with library().\nlibrary(conflicted)\nA natural place for us to do this is in our R/packages.R script.\nConflicts are detected when a function is used that is defined in multiple packages. See this example from the {conflicted} documentation:\nlibrary(dplyr)\n\nfilter(mtcars, cyl == 8)\n#&gt; Error:\n#&gt; ! [conflicted] filter found in 2 packages.\n#&gt; Either pick the one you want with `::`:\n#&gt; • dplyr::filter\n#&gt; • stats::filter\n#&gt; Or declare a preference with `conflicts_prefer()`:\n#&gt; • `conflicts_prefer(dplyr::filter)`\n#&gt; • `conflicts_prefer(stats::filter)`\nAs suggested, use the conflicts_prefer() function to explicitly select which package to prefer.\nIf you’d like to look for other conflicts that may come up, use conflict_scout(). Note that you only need to prefer a package if the conflicting function is used, so it isn’t necessary to go through the whole list returned by conflict_scout() to pick each preferred function. Look for ones you know you will use and be explicit for those.\nLastly, if you want to always prefer a certain package’s functions over another package you can use conflict_prefer_all() or conflict_prefer_matching(). See more here: ?conflict_prefer.\n\n\nInstruction: open your R/packages.R script and load the {conflicted} package. In your console, run conflict_scout(). Test one of the displayed functions in the console to see what happens when you try running it, eg. filter().\n\n\n\nInstruction: now run the {targets} pipeline and see if any conflicts come up. If they do, use conflict_prefer(package::function) to specify which package you prefer.",
-    "crumbs": [
-      "Exercises",
-      "{conflicted}"
-    ]
-  },
-  {
-    "objectID": "exercises/conflicted.html#usage",
-    "href": "exercises/conflicted.html#usage",
-    "title": "{conflicted}",
-    "section": "",
-    "text": "At its simplest, using {conflicted} is just loading it with library().\nlibrary(conflicted)\nA natural place for us to do this is in our R/packages.R script.\nConflicts are detected when a function is used that is defined in multiple packages. See this example from the {conflicted} documentation:\nlibrary(dplyr)\n\nfilter(mtcars, cyl == 8)\n#&gt; Error:\n#&gt; ! [conflicted] filter found in 2 packages.\n#&gt; Either pick the one you want with `::`:\n#&gt; • dplyr::filter\n#&gt; • stats::filter\n#&gt; Or declare a preference with `conflicts_prefer()`:\n#&gt; • `conflicts_prefer(dplyr::filter)`\n#&gt; • `conflicts_prefer(stats::filter)`\nAs suggested, use the conflicts_prefer() function to explicitly select which package to prefer.\nIf you’d like to look for other conflicts that may come up, use conflict_scout(). Note that you only need to prefer a package if the conflicting function is used, so it isn’t necessary to go through the whole list returned by conflict_scout() to pick each preferred function. Look for ones you know you will use and be explicit for those.\nLastly, if you want to always prefer a certain package’s functions over another package you can use conflict_prefer_all() or conflict_prefer_matching(). See more here: ?conflict_prefer.\n\n\nInstruction: open your R/packages.R script and load the {conflicted} package. In your console, run conflict_scout(). Test one of the displayed functions in the console to see what happens when you try running it, eg. filter().\n\n\n\nInstruction: now run the {targets} pipeline and see if any conflicts come up. If they do, use conflict_prefer(package::function) to specify which package you prefer.",
-    "crumbs": [
-      "Exercises",
-      "{conflicted}"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/01-functions-introduction.html",
-    "href": "exercises/functions/01-functions-introduction.html",
-    "title": "Introduction to functions",
-    "section": "",
-    "text": "Learning goal: Identify the structure of functions in terms of inputs, arguments, return objects and naming.\nInstruction: Pick three functions of your choice and note their characteristics. (pairs)\nFor example:\n\nname\narguments (inputs, options)\nreturn object (outputs)\n\nFeel free to look up documentation online, in the R help manual on your computer through RStudio or using the ? and ?? commands.\nWe encourage you to find your own functions, maybe a function you use or have wanted to learn about. If you can’t think of any right now, see for example stats::lm(), stats::runif(), or (trickier) base::do.call().\n\nInstruction: For the following tasks, write a function’s name, arguments and return object. Do this on paper, or in a blank text document - we are not writing code yet.\nFirst round (solo)\n\nCount the number of values greater than 0 in one column of a data.frame\nFilter rows in one column of a data.frame that match a string\nPlot a histogram for each vector of numbers in a list\n\nLearning goal: Reframe how we might think of code for an analysis as a series of steps instead as inputs, outputs, and arguments of functions.\nSecond round (together)\n\nAggregate columns of a data.frame by a grouping column, calculate a metric, and make two summary plots\nPrint summary statistics, make a diagnostic plot, filter based on an input argument, and write out a spreadsheet\n\nLearning goal: identify when a function’s goal is too complex and could be split into subfunctions that are easier to develop and test.\n\nInstruction: Read the following functions and note what you expect they will output. We have purposely used vague function names in this case - not our typical recommendation! When you are ready, click “Show output”.\nFunction 1\n\napple &lt;- 'green'\n\nf &lt;- function(x) {\n  nchar(x)\n}\n\nf(apple)\n\n\nShow output\n\n\n[1] 5\n\n\nFunction 2\n\napple &lt;- 'gala'\n\nf &lt;- function(x, times) {\n  rep(x, times = times)\n}\n\nf(apple, 10)\n\n\nShow output\n\n\n [1] \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\"\n\n\nFunction 3\n\napple &lt;- 'mcintosh'\npotato &lt;- 'russet'\n\nf &lt;- function(apple, potato) {\n  data.frame(apples = apple, potatoes = potato)\n}\n\nf(potato = potato)\n\n\nShow output\n\n\nError in f(potato = potato): argument \"apple\" is missing, with no default",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Introduction to functions"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/01-functions-introduction.html#exercises-function-introduction",
-    "href": "exercises/functions/01-functions-introduction.html#exercises-function-introduction",
-    "title": "Introduction to functions",
-    "section": "",
-    "text": "Learning goal: Identify the structure of functions in terms of inputs, arguments, return objects and naming.\nInstruction: Pick three functions of your choice and note their characteristics. (pairs)\nFor example:\n\nname\narguments (inputs, options)\nreturn object (outputs)\n\nFeel free to look up documentation online, in the R help manual on your computer through RStudio or using the ? and ?? commands.\nWe encourage you to find your own functions, maybe a function you use or have wanted to learn about. If you can’t think of any right now, see for example stats::lm(), stats::runif(), or (trickier) base::do.call().\n\nInstruction: For the following tasks, write a function’s name, arguments and return object. Do this on paper, or in a blank text document - we are not writing code yet.\nFirst round (solo)\n\nCount the number of values greater than 0 in one column of a data.frame\nFilter rows in one column of a data.frame that match a string\nPlot a histogram for each vector of numbers in a list\n\nLearning goal: Reframe how we might think of code for an analysis as a series of steps instead as inputs, outputs, and arguments of functions.\nSecond round (together)\n\nAggregate columns of a data.frame by a grouping column, calculate a metric, and make two summary plots\nPrint summary statistics, make a diagnostic plot, filter based on an input argument, and write out a spreadsheet\n\nLearning goal: identify when a function’s goal is too complex and could be split into subfunctions that are easier to develop and test.\n\nInstruction: Read the following functions and note what you expect they will output. We have purposely used vague function names in this case - not our typical recommendation! When you are ready, click “Show output”.\nFunction 1\n\napple &lt;- 'green'\n\nf &lt;- function(x) {\n  nchar(x)\n}\n\nf(apple)\n\n\nShow output\n\n\n[1] 5\n\n\nFunction 2\n\napple &lt;- 'gala'\n\nf &lt;- function(x, times) {\n  rep(x, times = times)\n}\n\nf(apple, 10)\n\n\nShow output\n\n\n [1] \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\"\n\n\nFunction 3\n\napple &lt;- 'mcintosh'\npotato &lt;- 'russet'\n\nf &lt;- function(apple, potato) {\n  data.frame(apples = apple, potatoes = potato)\n}\n\nf(potato = potato)\n\n\nShow output\n\n\nError in f(potato = potato): argument \"apple\" is missing, with no default",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Introduction to functions"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/03-functions-checks.html",
-    "href": "exercises/functions/03-functions-checks.html",
-    "title": "Checks",
-    "section": "",
-    "text": "Checks in functions are used to ensure inputs and arguments are as expected, to handle errors and to provide informative error messages to users. In this workshop we are going to focus on writing checks with the function stopifnot because it is simple and succinct. It was recently improved in R 4.0.0 when the R development team added the option to provide a more informative error which will help us clearly communicate with our users (and ourselves).\nstopifnot() expects a logical statement that you are expecting to be true, and, if not, stopifnot() will throw an error.\nTo build logical statements, you may find following list of functions useful:\n\nclass checks\n\n\nis.integer, is.numeric, is.data.frame, is.character\n\n\n\nnulls, NAs, NaNs\n\n\nis.null, is.na, is.nan\n\n\n\ndimensions\n\n\nlength, nrow, ncol, dim\n\n\n\nequality, comparisons\n\n\n== (equals)\n\n&gt;, &lt;, &gt;=, &lt;= (less than, greater than, less than or equal to, greater than or equal to)\nidentical\n\n\nnegation\n\n!\n\n\ndirectories, files\n\nfile.exists\ndir\n\nbasename, dirname\n\n\n\n\n\n\nInstruction: write a series of logical statements for the following objects then consult the solution to check your work. Focus only on the logical statement for now, we’ll use stopifnot in the following exercises.\nNumber\n\ncheck if x is a numeric, integer, double\ncheck if x is of length 1\ncheck if x is greater than 0\n\n\nx &lt;- 10\n\n\nShow solution\n\nis.numeric(x)\n\n[1] TRUE\n\nis.integer(x)\n\n[1] FALSE\n\nis.double(x)\n\n[1] TRUE\n\nlength(x) == 1\n\n[1] TRUE\n\nx &gt; 0\n\n[1] TRUE\n\n\ndata.frame\n\ncheck if DF is a data.frame, list, matrix\ncheck if DF has two columns and three rows\ncheck if DF’s column numbers is an integer, double, numeric\n\n\nDF &lt;- data.frame(colors = c('red', 'green', 'blue'), numbers = c(42.1, 2L, 10))\n\n\nShow solution\n\nis.data.frame(DF)\n\n[1] TRUE\n\nis.list(DF)\n\n[1] TRUE\n\nis.matrix(DF)\n\n[1] FALSE\n\nncol(DF) == 2\n\n[1] TRUE\n\nnrow(DF) == 3\n\n[1] TRUE\n\nis.integer(DF$numbers)\n\n[1] FALSE\n\nis.double(DF$numbers)\n\n[1] TRUE\n\nis.numeric(DF$numbers)\n\n[1] TRUE\n\n\n\nFirst, write a function to plot a data.frame, providing columns names for the data to be plotted on the x and y axes. Use the example data that we prepared with our prepare_csv function.\nFollow the steps from our approach to developing functions:\n\nSetup the function\n\nMake a function script in the R/ directory named plot_xy.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_plot_xy.R.\nLoad any required packages (library(package))\nSource the function (source('R/function.R))\nLoad example data and/or arguments for the function\n\n\n\nAdd a new section ‘Development’ in the test script (tests/test_plot_xy.R) to develop the body of your function. Since we have already built a function for preparing CSV files, use it in your test script, and your choice of base R plotting or {ggplot2}. Add the code to your function plot_xy() and test!\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\nprep_counts &lt;- prepare_csv(path_counts)\n\n\nHints: base R\n\nThis function has one step: taking an input data.frame and generating a plot.\nThe function’s arguments should include the data.frame, as well as the column names for the X and Y axes.\nPass the data.frame’s to the plot function’s x and y arguments with the [[ syntax, eg. DF[[x_column]]\n\nHints: ggplot2\n\nThis function has one step: taking an input data.frame and generating a plot.\nThe function’s arguments should include the data.frame, as well as the column names for the X and Y axes.\nThere are two main options:\n\nPass the data.frame’s to ggplot’s data argument then use the .data[[col]] syntax to wrap the x_col and y_col arguments (quoted column names) within aes.\nPass the data.frame’s to ggplot’s data argument then use the { } “embrace operator” to wrap the x_col and y_col arguments (unquoted* column names) within aes.\n\nSee the ?aes help page and the example with the “embrace operator”, and more details here: https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html#using-aes-and-vars-in-a-package-function\n\nInstruction: add the following checks to your plot_xy() function and test them in your test script (tests/test_plot_xy.R).\n\ncheck if the columns provided to the x_col and y_col arguments exist in the data.frame (quoted column name arguments)\ncheck if the plot generated is of class ggplot before returning (ggplot2)\n\n\nHints: unquoted column names with ggplot2\n\nIf you opted to use unquoted column names, it might be trickier to check if column names exist in the data.frame. However - this check is already covered by ggplot() anyways.\nIn case you wanted to add this, on top of the internal ggplot2 check, try something like this:\nas_name(enquo(x_col)) %in% colnames(DT)\nThese are {rlang} functions, part of the “tidy eval tools” and examples of metaprogramming. The Advanced R book has a detailed section on this concept.\n\n\nInstruction: add the following checks to your prepare_csv() function and test them in your test script (tests/test_prepare_csv.R).\n\ncheck if the path points to a file that exists\nbefore returning the object, check that it is a data.frame\n\nInstruction: Write more informative errors for your stopifnot() checks using the following syntax: stopifnot(\"error message\" = logical_statement). Think about your user (either someone else or future you) - what would help them understand and resolve this error?\nFor example,\nstopifnot(\"x is not a numeric\" = is.numeric(x))\n\nInstruction: using the same approach you used for x_col and y_col, add a color_col argument to plot_xy().",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Checks"
-    ]
-  },
-  {
-    "objectID": "exercises/functions/03-functions-checks.html#exercises-function-checks",
-    "href": "exercises/functions/03-functions-checks.html#exercises-function-checks",
-    "title": "Checks",
-    "section": "",
-    "text": "Instruction: write a series of logical statements for the following objects then consult the solution to check your work. Focus only on the logical statement for now, we’ll use stopifnot in the following exercises.\nNumber\n\ncheck if x is a numeric, integer, double\ncheck if x is of length 1\ncheck if x is greater than 0\n\n\nx &lt;- 10\n\n\nShow solution\n\nis.numeric(x)\n\n[1] TRUE\n\nis.integer(x)\n\n[1] FALSE\n\nis.double(x)\n\n[1] TRUE\n\nlength(x) == 1\n\n[1] TRUE\n\nx &gt; 0\n\n[1] TRUE\n\n\ndata.frame\n\ncheck if DF is a data.frame, list, matrix\ncheck if DF has two columns and three rows\ncheck if DF’s column numbers is an integer, double, numeric\n\n\nDF &lt;- data.frame(colors = c('red', 'green', 'blue'), numbers = c(42.1, 2L, 10))\n\n\nShow solution\n\nis.data.frame(DF)\n\n[1] TRUE\n\nis.list(DF)\n\n[1] TRUE\n\nis.matrix(DF)\n\n[1] FALSE\n\nncol(DF) == 2\n\n[1] TRUE\n\nnrow(DF) == 3\n\n[1] TRUE\n\nis.integer(DF$numbers)\n\n[1] FALSE\n\nis.double(DF$numbers)\n\n[1] TRUE\n\nis.numeric(DF$numbers)\n\n[1] TRUE\n\n\n\nFirst, write a function to plot a data.frame, providing columns names for the data to be plotted on the x and y axes. Use the example data that we prepared with our prepare_csv function.\nFollow the steps from our approach to developing functions:\n\nSetup the function\n\nMake a function script in the R/ directory named plot_xy.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_plot_xy.R.\nLoad any required packages (library(package))\nSource the function (source('R/function.R))\nLoad example data and/or arguments for the function\n\n\n\nAdd a new section ‘Development’ in the test script (tests/test_plot_xy.R) to develop the body of your function. Since we have already built a function for preparing CSV files, use it in your test script, and your choice of base R plotting or {ggplot2}. Add the code to your function plot_xy() and test!\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\nprep_counts &lt;- prepare_csv(path_counts)\n\n\nHints: base R\n\nThis function has one step: taking an input data.frame and generating a plot.\nThe function’s arguments should include the data.frame, as well as the column names for the X and Y axes.\nPass the data.frame’s to the plot function’s x and y arguments with the [[ syntax, eg. DF[[x_column]]\n\nHints: ggplot2\n\nThis function has one step: taking an input data.frame and generating a plot.\nThe function’s arguments should include the data.frame, as well as the column names for the X and Y axes.\nThere are two main options:\n\nPass the data.frame’s to ggplot’s data argument then use the .data[[col]] syntax to wrap the x_col and y_col arguments (quoted column names) within aes.\nPass the data.frame’s to ggplot’s data argument then use the { } “embrace operator” to wrap the x_col and y_col arguments (unquoted* column names) within aes.\n\nSee the ?aes help page and the example with the “embrace operator”, and more details here: https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html#using-aes-and-vars-in-a-package-function\n\nInstruction: add the following checks to your plot_xy() function and test them in your test script (tests/test_plot_xy.R).\n\ncheck if the columns provided to the x_col and y_col arguments exist in the data.frame (quoted column name arguments)\ncheck if the plot generated is of class ggplot before returning (ggplot2)\n\n\nHints: unquoted column names with ggplot2\n\nIf you opted to use unquoted column names, it might be trickier to check if column names exist in the data.frame. However - this check is already covered by ggplot() anyways.\nIn case you wanted to add this, on top of the internal ggplot2 check, try something like this:\nas_name(enquo(x_col)) %in% colnames(DT)\nThese are {rlang} functions, part of the “tidy eval tools” and examples of metaprogramming. The Advanced R book has a detailed section on this concept.\n\n\nInstruction: add the following checks to your prepare_csv() function and test them in your test script (tests/test_prepare_csv.R).\n\ncheck if the path points to a file that exists\nbefore returning the object, check that it is a data.frame\n\nInstruction: Write more informative errors for your stopifnot() checks using the following syntax: stopifnot(\"error message\" = logical_statement). Think about your user (either someone else or future you) - what would help them understand and resolve this error?\nFor example,\nstopifnot(\"x is not a numeric\" = is.numeric(x))\n\nInstruction: using the same approach you used for x_col and y_col, add a color_col argument to plot_xy().",
-    "crumbs": [
-      "Exercises",
-      "Functions",
-      "Checks"
-    ]
-  },
-  {
     "objectID": "exercises/functions/05-functions-bonus.html",
     "href": "exercises/functions/05-functions-bonus.html",
     "title": "Bonus",
@@ -575,6 +433,183 @@
       "Functions",
       "Bonus"
     ]
+  },
+  {
+    "objectID": "exercises/functions/03-functions-checks.html",
+    "href": "exercises/functions/03-functions-checks.html",
+    "title": "Checks",
+    "section": "",
+    "text": "Checks in functions are used to ensure inputs and arguments are as expected, to handle errors and to provide informative error messages to users. In this workshop we are going to focus on writing checks with the function stopifnot because it is simple and succinct. It was recently improved in R 4.0.0 when the R development team added the option to provide a more informative error which will help us clearly communicate with our users (and ourselves).\nstopifnot() expects a logical statement that you are expecting to be true, and, if not, stopifnot() will throw an error.\nTo build logical statements, you may find following list of functions useful:\n\nclass checks\n\n\nis.integer, is.numeric, is.data.frame, is.character\n\n\n\nnulls, NAs, NaNs\n\n\nis.null, is.na, is.nan\n\n\n\ndimensions\n\n\nlength, nrow, ncol, dim\n\n\n\nequality, comparisons\n\n\n== (equals)\n\n&gt;, &lt;, &gt;=, &lt;= (less than, greater than, less than or equal to, greater than or equal to)\nidentical\n\n\nnegation\n\n!\n\n\ndirectories, files\n\nfile.exists\ndir\n\nbasename, dirname\n\n\n\n\n\n\nInstruction: write a series of logical statements for the following objects then consult the solution to check your work. Focus only on the logical statement for now, we’ll use stopifnot in the following exercises.\nNumber\n\ncheck if x is a numeric, integer, double\ncheck if x is of length 1\ncheck if x is greater than 0\n\n\nx &lt;- 10\n\n\nShow solution\n\nis.numeric(x)\n\n[1] TRUE\n\nis.integer(x)\n\n[1] FALSE\n\nis.double(x)\n\n[1] TRUE\n\nlength(x) == 1\n\n[1] TRUE\n\nx &gt; 0\n\n[1] TRUE\n\n\ndata.frame\n\ncheck if DF is a data.frame, list, matrix\ncheck if DF has two columns and three rows\ncheck if DF’s column numbers is an integer, double, numeric\n\n\nDF &lt;- data.frame(colors = c('red', 'green', 'blue'), numbers = c(42.1, 2L, 10))\n\n\nShow solution\n\nis.data.frame(DF)\n\n[1] TRUE\n\nis.list(DF)\n\n[1] TRUE\n\nis.matrix(DF)\n\n[1] FALSE\n\nncol(DF) == 2\n\n[1] TRUE\n\nnrow(DF) == 3\n\n[1] TRUE\n\nis.integer(DF$numbers)\n\n[1] FALSE\n\nis.double(DF$numbers)\n\n[1] TRUE\n\nis.numeric(DF$numbers)\n\n[1] TRUE\n\n\n\nFirst, write a function to plot a data.frame, providing columns names for the data to be plotted on the x and y axes. Use the example data that we prepared with our prepare_csv function.\nFollow the steps from our approach to developing functions:\n\nSetup the function\n\nMake a function script in the R/ directory named plot_xy.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_plot_xy.R.\nLoad any required packages (library(package))\nSource the function (source('R/function.R))\nLoad example data and/or arguments for the function\n\n\n\nAdd a new section ‘Development’ in the test script (tests/test_plot_xy.R) to develop the body of your function. Since we have already built a function for preparing CSV files, use it in your test script, and your choice of base R plotting or {ggplot2}. Add the code to your function plot_xy() and test!\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\nprep_counts &lt;- prepare_csv(path_counts)\n\n\nHints: base R\n\nThis function has one step: taking an input data.frame and generating a plot.\nThe function’s arguments should include the data.frame, as well as the column names for the X and Y axes.\nPass the data.frame’s to the plot function’s x and y arguments with the [[ syntax, eg. DF[[x_column]]\n\nHints: ggplot2\n\nThis function has one step: taking an input data.frame and generating a plot.\nThe function’s arguments should include the data.frame, as well as the column names for the X and Y axes.\nThere are two main options:\n\nPass the data.frame’s to ggplot’s data argument then use the .data[[col]] syntax to wrap the x_col and y_col arguments (quoted column names) within aes.\nPass the data.frame’s to ggplot’s data argument then use the { } “embrace operator” to wrap the x_col and y_col arguments (unquoted* column names) within aes.\n\nSee the ?aes help page and the example with the “embrace operator”, and more details here: https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html#using-aes-and-vars-in-a-package-function\n\nInstruction: add the following checks to your plot_xy() function and test them in your test script (tests/test_plot_xy.R).\n\ncheck if the columns provided to the x_col and y_col arguments exist in the data.frame (quoted column name arguments)\ncheck if the plot generated is of class ggplot before returning (ggplot2)\n\n\nHints: unquoted column names with ggplot2\n\nIf you opted to use unquoted column names, it might be trickier to check if column names exist in the data.frame. However - this check is already covered by ggplot() anyways.\nIn case you wanted to add this, on top of the internal ggplot2 check, try something like this:\nas_name(enquo(x_col)) %in% colnames(DT)\nThese are {rlang} functions, part of the “tidy eval tools” and examples of metaprogramming. The Advanced R book has a detailed section on this concept.\n\n\nInstruction: add the following checks to your prepare_csv() function and test them in your test script (tests/test_prepare_csv.R).\n\ncheck if the path points to a file that exists\nbefore returning the object, check that it is a data.frame\n\nInstruction: Write more informative errors for your stopifnot() checks using the following syntax: stopifnot(\"error message\" = logical_statement). Think about your user (either someone else or future you) - what would help them understand and resolve this error?\nFor example,\nstopifnot(\"x is not a numeric\" = is.numeric(x))\n\nInstruction: using the same approach you used for x_col and y_col, add a color_col argument to plot_xy().",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Checks"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/03-functions-checks.html#exercises-function-checks",
+    "href": "exercises/functions/03-functions-checks.html#exercises-function-checks",
+    "title": "Checks",
+    "section": "",
+    "text": "Instruction: write a series of logical statements for the following objects then consult the solution to check your work. Focus only on the logical statement for now, we’ll use stopifnot in the following exercises.\nNumber\n\ncheck if x is a numeric, integer, double\ncheck if x is of length 1\ncheck if x is greater than 0\n\n\nx &lt;- 10\n\n\nShow solution\n\nis.numeric(x)\n\n[1] TRUE\n\nis.integer(x)\n\n[1] FALSE\n\nis.double(x)\n\n[1] TRUE\n\nlength(x) == 1\n\n[1] TRUE\n\nx &gt; 0\n\n[1] TRUE\n\n\ndata.frame\n\ncheck if DF is a data.frame, list, matrix\ncheck if DF has two columns and three rows\ncheck if DF’s column numbers is an integer, double, numeric\n\n\nDF &lt;- data.frame(colors = c('red', 'green', 'blue'), numbers = c(42.1, 2L, 10))\n\n\nShow solution\n\nis.data.frame(DF)\n\n[1] TRUE\n\nis.list(DF)\n\n[1] TRUE\n\nis.matrix(DF)\n\n[1] FALSE\n\nncol(DF) == 2\n\n[1] TRUE\n\nnrow(DF) == 3\n\n[1] TRUE\n\nis.integer(DF$numbers)\n\n[1] FALSE\n\nis.double(DF$numbers)\n\n[1] TRUE\n\nis.numeric(DF$numbers)\n\n[1] TRUE\n\n\n\nFirst, write a function to plot a data.frame, providing columns names for the data to be plotted on the x and y axes. Use the example data that we prepared with our prepare_csv function.\nFollow the steps from our approach to developing functions:\n\nSetup the function\n\nMake a function script in the R/ directory named plot_xy.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_plot_xy.R.\nLoad any required packages (library(package))\nSource the function (source('R/function.R))\nLoad example data and/or arguments for the function\n\n\n\nAdd a new section ‘Development’ in the test script (tests/test_plot_xy.R) to develop the body of your function. Since we have already built a function for preparing CSV files, use it in your test script, and your choice of base R plotting or {ggplot2}. Add the code to your function plot_xy() and test!\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\nprep_counts &lt;- prepare_csv(path_counts)\n\n\nHints: base R\n\nThis function has one step: taking an input data.frame and generating a plot.\nThe function’s arguments should include the data.frame, as well as the column names for the X and Y axes.\nPass the data.frame’s to the plot function’s x and y arguments with the [[ syntax, eg. DF[[x_column]]\n\nHints: ggplot2\n\nThis function has one step: taking an input data.frame and generating a plot.\nThe function’s arguments should include the data.frame, as well as the column names for the X and Y axes.\nThere are two main options:\n\nPass the data.frame’s to ggplot’s data argument then use the .data[[col]] syntax to wrap the x_col and y_col arguments (quoted column names) within aes.\nPass the data.frame’s to ggplot’s data argument then use the { } “embrace operator” to wrap the x_col and y_col arguments (unquoted* column names) within aes.\n\nSee the ?aes help page and the example with the “embrace operator”, and more details here: https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html#using-aes-and-vars-in-a-package-function\n\nInstruction: add the following checks to your plot_xy() function and test them in your test script (tests/test_plot_xy.R).\n\ncheck if the columns provided to the x_col and y_col arguments exist in the data.frame (quoted column name arguments)\ncheck if the plot generated is of class ggplot before returning (ggplot2)\n\n\nHints: unquoted column names with ggplot2\n\nIf you opted to use unquoted column names, it might be trickier to check if column names exist in the data.frame. However - this check is already covered by ggplot() anyways.\nIn case you wanted to add this, on top of the internal ggplot2 check, try something like this:\nas_name(enquo(x_col)) %in% colnames(DT)\nThese are {rlang} functions, part of the “tidy eval tools” and examples of metaprogramming. The Advanced R book has a detailed section on this concept.\n\n\nInstruction: add the following checks to your prepare_csv() function and test them in your test script (tests/test_prepare_csv.R).\n\ncheck if the path points to a file that exists\nbefore returning the object, check that it is a data.frame\n\nInstruction: Write more informative errors for your stopifnot() checks using the following syntax: stopifnot(\"error message\" = logical_statement). Think about your user (either someone else or future you) - what would help them understand and resolve this error?\nFor example,\nstopifnot(\"x is not a numeric\" = is.numeric(x))\n\nInstruction: using the same approach you used for x_col and y_col, add a color_col argument to plot_xy().",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Checks"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/01-functions-introduction.html",
+    "href": "exercises/functions/01-functions-introduction.html",
+    "title": "Introduction to functions",
+    "section": "",
+    "text": "Learning goal: Identify the structure of functions in terms of inputs, arguments, return objects and naming.\nInstruction: Pick three functions of your choice and note their characteristics. (pairs)\nFor example:\n\nname\narguments (inputs, options)\nreturn object (outputs)\n\nFeel free to look up documentation online, in the R help manual on your computer through RStudio or using the ? and ?? commands.\nWe encourage you to find your own functions, maybe a function you use or have wanted to learn about. If you can’t think of any right now, see for example stats::lm(), stats::runif(), or (trickier) base::do.call().\n\nInstruction: For the following tasks, write a function’s name, arguments and return object. Do this on paper, or in a blank text document - we are not writing code yet.\nFirst round (solo)\n\nCount the number of values greater than 0 in one column of a data.frame\nFilter rows in one column of a data.frame that match a string\nPlot a histogram for each vector of numbers in a list\n\nLearning goal: Reframe how we might think of code for an analysis as a series of steps instead as inputs, outputs, and arguments of functions.\nSecond round (together)\n\nAggregate columns of a data.frame by a grouping column, calculate a metric, and make two summary plots\nPrint summary statistics, make a diagnostic plot, filter based on an input argument, and write out a spreadsheet\n\nLearning goal: identify when a function’s goal is too complex and could be split into subfunctions that are easier to develop and test.\n\nInstruction: Read the following functions and note what you expect they will output. We have purposely used vague function names in this case - not our typical recommendation! When you are ready, click “Show output”.\nFunction 1\n\napple &lt;- 'green'\n\nf &lt;- function(x) {\n  nchar(x)\n}\n\nf(apple)\n\n\nShow output\n\n\n[1] 5\n\n\nFunction 2\n\napple &lt;- 'gala'\n\nf &lt;- function(x, times) {\n  rep(x, times = times)\n}\n\nf(apple, 10)\n\n\nShow output\n\n\n [1] \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\"\n\n\nFunction 3\n\napple &lt;- 'mcintosh'\npotato &lt;- 'russet'\n\nf &lt;- function(apple, potato) {\n  data.frame(apples = apple, potatoes = potato)\n}\n\nf(potato = potato)\n\n\nShow output\n\n\nError in f(potato = potato): argument \"apple\" is missing, with no default",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Introduction to functions"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/01-functions-introduction.html#exercises-function-introduction",
+    "href": "exercises/functions/01-functions-introduction.html#exercises-function-introduction",
+    "title": "Introduction to functions",
+    "section": "",
+    "text": "Learning goal: Identify the structure of functions in terms of inputs, arguments, return objects and naming.\nInstruction: Pick three functions of your choice and note their characteristics. (pairs)\nFor example:\n\nname\narguments (inputs, options)\nreturn object (outputs)\n\nFeel free to look up documentation online, in the R help manual on your computer through RStudio or using the ? and ?? commands.\nWe encourage you to find your own functions, maybe a function you use or have wanted to learn about. If you can’t think of any right now, see for example stats::lm(), stats::runif(), or (trickier) base::do.call().\n\nInstruction: For the following tasks, write a function’s name, arguments and return object. Do this on paper, or in a blank text document - we are not writing code yet.\nFirst round (solo)\n\nCount the number of values greater than 0 in one column of a data.frame\nFilter rows in one column of a data.frame that match a string\nPlot a histogram for each vector of numbers in a list\n\nLearning goal: Reframe how we might think of code for an analysis as a series of steps instead as inputs, outputs, and arguments of functions.\nSecond round (together)\n\nAggregate columns of a data.frame by a grouping column, calculate a metric, and make two summary plots\nPrint summary statistics, make a diagnostic plot, filter based on an input argument, and write out a spreadsheet\n\nLearning goal: identify when a function’s goal is too complex and could be split into subfunctions that are easier to develop and test.\n\nInstruction: Read the following functions and note what you expect they will output. We have purposely used vague function names in this case - not our typical recommendation! When you are ready, click “Show output”.\nFunction 1\n\napple &lt;- 'green'\n\nf &lt;- function(x) {\n  nchar(x)\n}\n\nf(apple)\n\n\nShow output\n\n\n[1] 5\n\n\nFunction 2\n\napple &lt;- 'gala'\n\nf &lt;- function(x, times) {\n  rep(x, times = times)\n}\n\nf(apple, 10)\n\n\nShow output\n\n\n [1] \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\" \"gala\"\n\n\nFunction 3\n\napple &lt;- 'mcintosh'\npotato &lt;- 'russet'\n\nf &lt;- function(apple, potato) {\n  data.frame(apples = apple, potatoes = potato)\n}\n\nf(potato = potato)\n\n\nShow output\n\n\nError in f(potato = potato): argument \"apple\" is missing, with no default",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Introduction to functions"
+    ]
+  },
+  {
+    "objectID": "exercises/conflicted.html",
+    "href": "exercises/conflicted.html",
+    "title": "{conflicted}",
+    "section": "",
+    "text": "The {conflicted} package provides an alternative to R’s default management of conflicts - to just use the most recently loaded package. {conflicted} instead highlights the conflict when it occurs as an error, forcing the user to be explicit about which function they would prefer to use. It also provides a function to “scout” potential conflicts, to make decisions about preference before conflicts are hit.\n\n\nAt its simplest, using {conflicted} is just loading it with library().\nlibrary(conflicted)\nA natural place for us to do this is in our R/packages.R script.\nConflicts are detected when a function is used that is defined in multiple packages. See this example from the {conflicted} documentation:\nlibrary(dplyr)\n\nfilter(mtcars, cyl == 8)\n#&gt; Error:\n#&gt; ! [conflicted] filter found in 2 packages.\n#&gt; Either pick the one you want with `::`:\n#&gt; • dplyr::filter\n#&gt; • stats::filter\n#&gt; Or declare a preference with `conflicts_prefer()`:\n#&gt; • `conflicts_prefer(dplyr::filter)`\n#&gt; • `conflicts_prefer(stats::filter)`\nAs suggested, use the conflicts_prefer() function to explicitly select which package to prefer.\nIf you’d like to look for other conflicts that may come up, use conflict_scout(). Note that you only need to prefer a package if the conflicting function is used, so it isn’t necessary to go through the whole list returned by conflict_scout() to pick each preferred function. Look for ones you know you will use and be explicit for those.\nLastly, if you want to always prefer a certain package’s functions over another package you can use conflict_prefer_all() or conflict_prefer_matching(). See more here: ?conflict_prefer.\n\n\nInstruction: open your R/packages.R script and load the {conflicted} package. In your console, run conflict_scout(). Test one of the displayed functions in the console to see what happens when you try running it, eg. filter().\n\n\n\nInstruction: now run the {targets} pipeline and see if any conflicts come up. If they do, use conflict_prefer(package::function) to specify which package you prefer.",
+    "crumbs": [
+      "Exercises",
+      "{conflicted}"
+    ]
+  },
+  {
+    "objectID": "exercises/conflicted.html#usage",
+    "href": "exercises/conflicted.html#usage",
+    "title": "{conflicted}",
+    "section": "",
+    "text": "At its simplest, using {conflicted} is just loading it with library().\nlibrary(conflicted)\nA natural place for us to do this is in our R/packages.R script.\nConflicts are detected when a function is used that is defined in multiple packages. See this example from the {conflicted} documentation:\nlibrary(dplyr)\n\nfilter(mtcars, cyl == 8)\n#&gt; Error:\n#&gt; ! [conflicted] filter found in 2 packages.\n#&gt; Either pick the one you want with `::`:\n#&gt; • dplyr::filter\n#&gt; • stats::filter\n#&gt; Or declare a preference with `conflicts_prefer()`:\n#&gt; • `conflicts_prefer(dplyr::filter)`\n#&gt; • `conflicts_prefer(stats::filter)`\nAs suggested, use the conflicts_prefer() function to explicitly select which package to prefer.\nIf you’d like to look for other conflicts that may come up, use conflict_scout(). Note that you only need to prefer a package if the conflicting function is used, so it isn’t necessary to go through the whole list returned by conflict_scout() to pick each preferred function. Look for ones you know you will use and be explicit for those.\nLastly, if you want to always prefer a certain package’s functions over another package you can use conflict_prefer_all() or conflict_prefer_matching(). See more here: ?conflict_prefer.\n\n\nInstruction: open your R/packages.R script and load the {conflicted} package. In your console, run conflict_scout(). Test one of the displayed functions in the console to see what happens when you try running it, eg. filter().\n\n\n\nInstruction: now run the {targets} pipeline and see if any conflicts come up. If they do, use conflict_prefer(package::function) to specify which package you prefer.",
+    "crumbs": [
+      "Exercises",
+      "{conflicted}"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/02-functions-development.html",
+    "href": "exercises/functions/02-functions-development.html",
+    "title": "Developing functions",
+    "section": "",
+    "text": "The setup:\n\nSetup the function\n\nMake a function script in the R/ directory named function_name.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_function_name.R.\nLoad any required packages (library(package))\nSource the function (source('R/function_name.R))\nLoad example data and/or arguments for the function\n\n\n\nWe’ll use the following approach for developing functions:\n\nFill in the body of the function, state the returned object, add arguments in the function script (R/function_name.R)\nAdd a test that uses the function with the example data\nRun the entire test script\nCheck the output, note required changes, errors, warnings, etc\nHead back to the function script to make changes\nRun the entire test script\n\nCheck the test output, tweak the function, repeat!\nThis process of editing two files might seem like extra work, but we recommend separating the function’s definition from the bits of code we use to test it. Think of the test script as your isolated playground to test and develop the function and your function script as the sheltered environment where you carefully tweak the function. You can also use this test script as a place to develop the function using the same inputs and arguments as the function. Keeping these parts separate can help to avoid mysterious errors and general chaos!\n\n\nInstruction: setup your function script and test script for your new function prepare_csv().\nUse whichever function you prefer for reading CSVs (eg. data.table::fread(), or readr::read_csv()). For cleaning column names, we’ll use the function clean_names() from the {janitor} package.\nNote: since we are writing a function to read the data in, we’ll test the function with the data’s path instead. We’ll use the example dataset for adult and chick counts described in the README. For example:\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\n\nUse the section “Development” in your test script (tests/test_prepare_csv.R) to develop the body of your function. Use path_counts and the function for reading CSVs, then the clean_names() function from the {janitor} package. Add the code to the body of your function prepare_csv() and test!\n\nHints\n\nThis function has two steps: reading a CSV from a path and cleaning the column names.\nBoth of these steps are going to use functions from external packages, so we only have to put them together.\nThe function’s arguments should include the path to the CSV.\nFirst, take the path and pass it to the function for reading CSVs.\nThen, pass the data.frame returned to the clean_names() function from the {janitor} package.",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Developing functions"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/02-functions-development.html#setup",
+    "href": "exercises/functions/02-functions-development.html#setup",
+    "title": "Developing functions",
+    "section": "",
+    "text": "The setup:\n\nSetup the function\n\nMake a function script in the R/ directory named function_name.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_function_name.R.\nLoad any required packages (library(package))\nSource the function (source('R/function_name.R))\nLoad example data and/or arguments for the function",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Developing functions"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/02-functions-development.html#approach",
+    "href": "exercises/functions/02-functions-development.html#approach",
+    "title": "Developing functions",
+    "section": "",
+    "text": "We’ll use the following approach for developing functions:\n\nFill in the body of the function, state the returned object, add arguments in the function script (R/function_name.R)\nAdd a test that uses the function with the example data\nRun the entire test script\nCheck the output, note required changes, errors, warnings, etc\nHead back to the function script to make changes\nRun the entire test script\n\nCheck the test output, tweak the function, repeat!\nThis process of editing two files might seem like extra work, but we recommend separating the function’s definition from the bits of code we use to test it. Think of the test script as your isolated playground to test and develop the function and your function script as the sheltered environment where you carefully tweak the function. You can also use this test script as a place to develop the function using the same inputs and arguments as the function. Keeping these parts separate can help to avoid mysterious errors and general chaos!",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Developing functions"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/02-functions-development.html#exercises-function-development",
+    "href": "exercises/functions/02-functions-development.html#exercises-function-development",
+    "title": "Developing functions",
+    "section": "",
+    "text": "Instruction: setup your function script and test script for your new function prepare_csv().\nUse whichever function you prefer for reading CSVs (eg. data.table::fread(), or readr::read_csv()). For cleaning column names, we’ll use the function clean_names() from the {janitor} package.\nNote: since we are writing a function to read the data in, we’ll test the function with the data’s path instead. We’ll use the example dataset for adult and chick counts described in the README. For example:\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\n\nUse the section “Development” in your test script (tests/test_prepare_csv.R) to develop the body of your function. Use path_counts and the function for reading CSVs, then the clean_names() function from the {janitor} package. Add the code to the body of your function prepare_csv() and test!\n\nHints\n\nThis function has two steps: reading a CSV from a path and cleaning the column names.\nBoth of these steps are going to use functions from external packages, so we only have to put them together.\nThe function’s arguments should include the path to the CSV.\nFirst, take the path and pass it to the function for reading CSVs.\nThen, pass the data.frame returned to the clean_names() function from the {janitor} package.",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Developing functions"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/04-functions-control-flow.html",
+    "href": "exercises/functions/04-functions-control-flow.html",
+    "title": "Controlling flow",
+    "section": "",
+    "text": "Conditionals in functions are used to modify how a function runs, determine what output to return or to return warnings and errors depending on logical statements. We’ll look at if and else, as well as functions for combining multiple logical statements. if and else can be used instead of stopifnot, usually in cases where logical statements are more complex or a more elaborate error message is required.\nThe following functions are essential for controlling flow in R:\n\n\nif else (and else if)\n\n||, && combine multiple logical expressions and short-circuit when || sees the first true and && sees the first false\n\n|, & are vectorized and cannot be directly used in an if statement unless you also use any, all\n\n\n\n\nInstruction: write a series of if else conditional statements for the following objects then consult the solution to check your work.\nNumeric\n\nif x is a numeric, return x as a character\nprint ‘positive’ if x is greater than 0, else print ‘negative’ if x is less than 0\nif x / 3 returns a remainder (hint: see ?`%%`), print the remainder\n\n\nx &lt;- 10\n\n\nShow solution\n\nif (is.numeric(x)) {\n    as.character(x)\n}\n\n[1] \"10\"\n\nif (x &gt; 0) {\n    print('positive')\n} else if (x &lt; 0) {\n    print('negative')\n}\n\n[1] \"positive\"\n\nif (x %% 3) {\n    print(x %% 3)\n}\n\n[1] 1\n\n\ndata.frame\n\nreturn the column ‘colors’ if it exists in DF\nif type is ‘histogram’, plot a histogram of DF’s column ‘numbers’\n\n\nDF &lt;- data.frame(colors = c('red', 'green', 'blue'), numbers = c(42.1, 2L, 10))\ntype &lt;- 'histogram'\n\n\nShow solution\n\nif ('colors' %in% colnames(DF)) {\n    DF['colors']\n}\n\n  colors\n1    red\n2  green\n3   blue\n\nif (type == 'histogram') {\n    hist(DF$numbers)\n}\n\n\n\n\n\n\n\n\nNext we’ll write a new function that processes our prepared CSV files.\nLet’s say we wanted to summarize the number of adults and chicks counted by island. First, write a function to sum the ‘adults’ and ‘chicks’ columns in the data.frame. Use the example data that we prepared with our prepare_csv function.\nFollow the steps from our approach to developing functions:\n\nSetup the function\n\nMake a function script in the R/ directory named sum_counts.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_sum_counts.R.\nLoad any required packages (library(package))\nSource the function (source('R/function.R))\nLoad example data and/or arguments for the function\n\n\n\nSince we have already built a function for preparing CSV files, use it in your test script:\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\nprep_counts &lt;- prepare_csv(path_counts)\n\nAdd a new section ‘Development’ in the test script (tests/test_sum_counts.R) to develop the body of your function. Use the prepared CSV data as shown above, add the code to your function sum_counts() and test!\n\nHints: by\n\n{data.table} has an argument by\n{dplyr} has an alternative to group_by for passing character column names called group_by_at\nNext steps:\n\ndecide if it is better for you (or a potential user) to set the columns that we calculate the sum by inside the function (fixed) or as an argument (flexible) - try both options\nadd a filter argument filter_gt_year (default set to NULL) and when it is not NULL, filter the data only greater than the value provided\n\nTest these as you go in your test script tests/test_sum_counts.R.\n\nHints: defaults\n\nTo set a function’s argument to default, use the syntax argument = default_value. For example:\nfunction(x = 1, y = 2, z = 3) {\n\n}\n\nAdd checks to your functions plot_xy() and sum_counts():\n\nuse the arguments x_col and y_col to also update the axis labels in plot_xy() (base R)\nuse a new argument color_col to provide a column in plot_xy()\n\nbuild a plot function that plots the output of sum_counts()",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Controlling flow"
+    ]
+  },
+  {
+    "objectID": "exercises/functions/04-functions-control-flow.html#exercises-function-conditionals",
+    "href": "exercises/functions/04-functions-control-flow.html#exercises-function-conditionals",
+    "title": "Controlling flow",
+    "section": "",
+    "text": "Instruction: write a series of if else conditional statements for the following objects then consult the solution to check your work.\nNumeric\n\nif x is a numeric, return x as a character\nprint ‘positive’ if x is greater than 0, else print ‘negative’ if x is less than 0\nif x / 3 returns a remainder (hint: see ?`%%`), print the remainder\n\n\nx &lt;- 10\n\n\nShow solution\n\nif (is.numeric(x)) {\n    as.character(x)\n}\n\n[1] \"10\"\n\nif (x &gt; 0) {\n    print('positive')\n} else if (x &lt; 0) {\n    print('negative')\n}\n\n[1] \"positive\"\n\nif (x %% 3) {\n    print(x %% 3)\n}\n\n[1] 1\n\n\ndata.frame\n\nreturn the column ‘colors’ if it exists in DF\nif type is ‘histogram’, plot a histogram of DF’s column ‘numbers’\n\n\nDF &lt;- data.frame(colors = c('red', 'green', 'blue'), numbers = c(42.1, 2L, 10))\ntype &lt;- 'histogram'\n\n\nShow solution\n\nif ('colors' %in% colnames(DF)) {\n    DF['colors']\n}\n\n  colors\n1    red\n2  green\n3   blue\n\nif (type == 'histogram') {\n    hist(DF$numbers)\n}\n\n\n\n\n\n\n\n\nNext we’ll write a new function that processes our prepared CSV files.\nLet’s say we wanted to summarize the number of adults and chicks counted by island. First, write a function to sum the ‘adults’ and ‘chicks’ columns in the data.frame. Use the example data that we prepared with our prepare_csv function.\nFollow the steps from our approach to developing functions:\n\nSetup the function\n\nMake a function script in the R/ directory named sum_counts.R\n\nWrite the function’s skeleton (name, arguments, curly braces)\n\n\nSetup the test script\n\nMake a corresponding test script in the tests/ directory named test_sum_counts.R.\nLoad any required packages (library(package))\nSource the function (source('R/function.R))\nLoad example data and/or arguments for the function\n\n\n\nSince we have already built a function for preparing CSV files, use it in your test script:\n\npath_counts &lt;- file.path('raw-data', 'adelie-adult-chick-counts.csv')\nprep_counts &lt;- prepare_csv(path_counts)\n\nAdd a new section ‘Development’ in the test script (tests/test_sum_counts.R) to develop the body of your function. Use the prepared CSV data as shown above, add the code to your function sum_counts() and test!\n\nHints: by\n\n{data.table} has an argument by\n{dplyr} has an alternative to group_by for passing character column names called group_by_at\nNext steps:\n\ndecide if it is better for you (or a potential user) to set the columns that we calculate the sum by inside the function (fixed) or as an argument (flexible) - try both options\nadd a filter argument filter_gt_year (default set to NULL) and when it is not NULL, filter the data only greater than the value provided\n\nTest these as you go in your test script tests/test_sum_counts.R.\n\nHints: defaults\n\nTo set a function’s argument to default, use the syntax argument = default_value. For example:\nfunction(x = 1, y = 2, z = 3) {\n\n}\n\nAdd checks to your functions plot_xy() and sum_counts():\n\nuse the arguments x_col and y_col to also update the axis labels in plot_xy() (base R)\nuse a new argument color_col to provide a column in plot_xy()\n\nbuild a plot function that plots the output of sum_counts()",
+    "crumbs": [
+      "Exercises",
+      "Functions",
+      "Controlling flow"
+    ]
+  },
+  {
+    "objectID": "exercises/intro.html",
+    "href": "exercises/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "On a piece of paper, draw your iSSA project (or another project if you haven’t started an iSSA yet). List input data, main analysis steps, models and figures. We’ll get more specific with code and functions later, so just start with general ideas. Connect dependencies with arrows and note where you would want to branch by eg. individiual or season.\n\n\n\nIn a text file, adapt your drawing into a workflow using pseudocode. For example:\n\ndata = read csv\nfilter data min/max year\nresample filter data\nmodel resampled data\nplot model predictions\n\n\n\n\nAs a group, head over to the {targets} iSSA workflow to walkthrough the workflow’s steps.\n\n\n\nBefore we dive into the {targets} iSSA workflow any further, let’s start with simpler examples based on the palmerpenguins dataset.\n\nProjects\nExercises\n{targets}"
+  },
+  {
+    "objectID": "exercises/intro.html#draw-your-project",
+    "href": "exercises/intro.html#draw-your-project",
+    "title": "Introduction",
+    "section": "",
+    "text": "On a piece of paper, draw your iSSA project (or another project if you haven’t started an iSSA yet). List input data, main analysis steps, models and figures. We’ll get more specific with code and functions later, so just start with general ideas. Connect dependencies with arrows and note where you would want to branch by eg. individiual or season."
+  },
+  {
+    "objectID": "exercises/intro.html#write-it-out-in-pseudocode",
+    "href": "exercises/intro.html#write-it-out-in-pseudocode",
+    "title": "Introduction",
+    "section": "",
+    "text": "In a text file, adapt your drawing into a workflow using pseudocode. For example:\n\ndata = read csv\nfilter data min/max year\nresample filter data\nmodel resampled data\nplot model predictions"
+  },
+  {
+    "objectID": "exercises/intro.html#overview-of-targets-issa-workflow",
+    "href": "exercises/intro.html#overview-of-targets-issa-workflow",
+    "title": "Introduction",
+    "section": "",
+    "text": "As a group, head over to the {targets} iSSA workflow to walkthrough the workflow’s steps."
+  },
+  {
+    "objectID": "exercises/intro.html#start-with-penguins",
+    "href": "exercises/intro.html#start-with-penguins",
+    "title": "Introduction",
+    "section": "",
+    "text": "Before we dive into the {targets} iSSA workflow any further, let’s start with simpler examples based on the palmerpenguins dataset.\n\nProjects\nExercises\n{targets}"
   },
   {
     "objectID": "exercises/renv.html",
@@ -721,7 +756,7 @@
     "href": "index.html",
     "title": "{targets} iSSA workshop",
     "section": "",
-    "text": "{targets} iSSA workflow\nThis workshop is based on the reproducible workflows workshop originally developed for a workshop at CSEE 2023 by:\n\nAlec L. Robitaille (Memorial University of Newfoundland and Labrador)\nIsabella C. Richmond (Concordia University)\n\n\n\n\nThis workshop is aimed at improving our ability to use and modify the {targets} iSSA workflow. All the materials should be accessible from the side bar (slides, exercises, resources for further reading, and the link to the GitHub repository can be accessed by clicking on the GitHub icon).\nWe don’t have any strict dependencies on specific versions of R or R packages, but it would be good to have at least R version 4.0 and a recent version of RStudio.\nWe are using Quarto to build the workshop’s website and exercises, so it could be helpful for you to install it too. If you don’t have time to, you can always complete exercises in an R script - so no pressure.\nInstall first the Quarto CLI from the here then the package with the command at the bottom.\nPlease install the following packages (after updating R):\npkgs &lt;- c(\n    'targets',\n    'tarchetypes',\n\n    'qs',\n    'visNetwork',\n    'igraph',\n\n    'data.table',\n    'dplyr',\n\n    'ggplot2',\n    'ggthemes',\n\n    'testthat',\n    'janitor',\n    'rlang',\n    'renv',\n    'conflicted',\n\n    'palmerpenguins',\n\n    'quarto',\n    'xml2',\n    'downlit',\n    'usethis',\n\n    'amt',\n    'sf',\n    'raster',\n\n    'parsedate',\n\n    'distanceto',\n\n    'glmmTMB',\n    'broom.mixed',\n    'tidyr',\n    'dplyr',\n    'tibble'\n)\n\ninstall.packages(pkgs)\nTo download the workshop materials for a participant, use this command:\nlibrary(usethis)\n\n# (Set your own destination directory)\nuse_course(\n  'robitalec/targets-issa-workshop', \n  destdir = '~/Documents'\n)\nOr by downloading and unzipping the ZIP file at this link: https://github.com/robitalec/targets-issa-workshop.\nThen open up the RStudio project.\n\n\n\nExample data for this workshop is borrowed from the Palmer Long-Term Ecological Research (LTER). Here is the study description from the Palmer LTER site:\n\nThe Palmer Long-Term Ecological Research (LTER) study area is located to the west of the Antarctic Peninsula extending South and North of the Palmer Basin from onshore to several hundred kilometers off shore. Palmer Station is one of the three United States research stations located in Antarctica. It is on Anvers Island midway down the Antarctic Peninsula at latitude 64.7 South, longitude 64.0 West.\n\n\nThe Palmer LTER studies a polar marine biome with research focused on the Antarctic pelagic marine ecosystem, including sea ice habitats, regional oceanography and terrestrial nesting sites of seabird predators. The Palmer LTER is one of more than 26 LTER research sites located throughout the United States, Puerto Rico and Tahiti; each focused on a specific ecosystem, that together constitute the LTER Network.\n\nWe gratefully acknowledge the Palmer LTER for releasing data freely and openly for diverse uses - in our case for training analytical skills of researchers in ecology.\n\n\nThe first dataset is already available in R through the palmerpenguins R package. There is a raw version and a cleaned version. They contain data for 344 penguins, with the following variables (cleaned version):\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nThe following datasets are available directly from the Palmer LTER Data Catalog. To download the data to the raw-data/ directory, run the function download_example_data() (R/download_example_data.R).\nThis second dataset contains monthly averaged weather timeseries from Palmer Station, Antarctica, with the following variables:\n\nDate\n\nYear\n\nMonth\n\nAverage Temperature\n\nTemperature Count\n\nAverage Pressure\n\nPressure Count\n\nAverage Melted Precipitation\n\nPrecipitation Count\n\nData package summary\nData package metadata\nLink to data (CSV):\nhttps://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-pal.189.8&entityid=ab357b4c92531a07d98ff1c4f4809a1e\n\n\n\nThe third dataset contains monthly sea ice area from the region around the Palmer Station, Antarctica, with the following variables:\n\nYear\nMonth\nArea\n\nNote: this data is formatted with months as columns, years as rows, and cells filled with the corresponding area.\nData package summary\nData package metadata\nLink to data (TXT):\nhttps://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-pal.34.7&entityid=0fccb4e99aaa0c0cc85c23284288ec81\n\n\n\nThe fourth dataset contains Adelie penguin adult and chick counts\n\nstudyName\n\nDate GMT\n\nTime GMT\n\nIsland\n\nColony\n\nAdults\n\nChicks\n\nData package summary\nData package metadata\nLink to data (CSV):\nhttps://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-pal.88.8&entityid=b4062890db09a72628786650dacfbf1f\n\n\n\n\nThis project is released under the GNU General Public License v3.0. Read it here.",
+    "text": "This workshop is focused on developing familiarity with using the {targets} iSSA workflow. The workflow is intended as a detailed example to be used alongside the How To iSSA online book. The details of iSSAs and how they are theory implemented in the workflow is well covered there, so this workshop centers on the code required to run the example iSSA and adapt it to your own data.\nThis workshop is based on the reproducible workflows workshop originally developed for a workshop at CSEE 2023 by:\n\nAlec L. Robitaille (Memorial University of Newfoundland and Labrador)\nIsabella C. Richmond (Concordia University)\n\n\n\n\nThe {targets} package developed by Will Landau and peer reviewed by rOpenSci is an R package for defining pipelines/workflows, coordinating interdependent analytical steps, input and output data files, and iterating across patterns. Each step in a defined pipeline is saved and only rerun when preceeding steps have been modified, saving us and energy only rerunning what needs to. These features are incredibly well suited to iSSAs given their resource intensiveness and levels of analysis eg. individuals, seasons, etc.\n{targets} emphasizes a function oriented programming style that improves on scipt based workflows. Logical chunks of code can be written as functions that can be reused throughout and across projects. See the Functions chapter in the {targets} manual.\nBranching/iterating across patterns, eg. lists of files or data.frame columns, is flexible and built in. This means our functions can be typically built for one chunk (eg. a single individual) which is easily applied over every level using {targets}’s dynamic branching. See the Dynamic branching chapter in the {targets} manual.\nOnce the pipeline is defined, {targets} orchestrates the tasks. No need to sit at the computer running a series of scripts - just start the pipeline and go for a walk outside or make yourself cup of coffee/tea.\n\n\n\nThis workshop is aimed at improving our ability to use and modify the {targets} iSSA workflow. All the materials should be accessible from the side bar (slides, exercises, resources for further reading, and the link to the GitHub repository can be accessed by clicking on the GitHub icon).\nWe don’t have any strict dependencies on specific versions of R or R packages, but it would be good to have at least R version 4.0 and a recent version of RStudio.\nWe are using Quarto to build the workshop’s website and exercises, so it could be helpful for you to install it too. If you don’t have time to, you can always complete exercises in an R script - so no pressure.\nInstall first the Quarto CLI from the here then the package with the command at the bottom.\nPlease install the following packages (after updating R):\npkgs &lt;- c(\n    'targets',\n    'tarchetypes',\n\n    'qs',\n    'visNetwork',\n    'igraph',\n\n    'data.table',\n    'dplyr',\n\n    'ggplot2',\n    'ggthemes',\n\n    'testthat',\n    'janitor',\n    'rlang',\n    'renv',\n    'conflicted',\n\n    'palmerpenguins',\n\n    'quarto',\n    'xml2',\n    'downlit',\n    'usethis',\n\n    'amt',\n    'sf',\n    'raster',\n\n    'parsedate',\n\n    'distanceto',\n\n    'glmmTMB',\n    'broom.mixed',\n    'tidyr',\n    'dplyr',\n    'tibble'\n)\n\ninstall.packages(pkgs)\nTo download the workshop materials for a participant, use this command:\nlibrary(usethis)\n\n# (Set your own destination directory)\nuse_course(\n  'robitalec/targets-issa-workshop', \n  destdir = '~/Documents'\n)\nOr by downloading and unzipping the ZIP file at this link: https://github.com/robitalec/targets-issa-workshop.\nThen open up the RStudio project.\n\n\n\nExample data for this workshop is borrowed from the Palmer Long-Term Ecological Research (LTER). Here is the study description from the Palmer LTER site:\n\nThe Palmer Long-Term Ecological Research (LTER) study area is located to the west of the Antarctic Peninsula extending South and North of the Palmer Basin from onshore to several hundred kilometers off shore. Palmer Station is one of the three United States research stations located in Antarctica. It is on Anvers Island midway down the Antarctic Peninsula at latitude 64.7 South, longitude 64.0 West.\n\n\nThe Palmer LTER studies a polar marine biome with research focused on the Antarctic pelagic marine ecosystem, including sea ice habitats, regional oceanography and terrestrial nesting sites of seabird predators. The Palmer LTER is one of more than 26 LTER research sites located throughout the United States, Puerto Rico and Tahiti; each focused on a specific ecosystem, that together constitute the LTER Network.\n\nWe gratefully acknowledge the Palmer LTER for releasing data freely and openly for diverse uses - in our case for training analytical skills of researchers in ecology.\n\n\nThe first dataset is already available in R through the palmerpenguins R package. There is a raw version and a cleaned version. They contain data for 344 penguins, with the following variables (cleaned version):\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nThe following datasets are available directly from the Palmer LTER Data Catalog. To download the data to the raw-data/ directory, run the function download_example_data() (R/download_example_data.R).\nThis second dataset contains monthly averaged weather timeseries from Palmer Station, Antarctica, with the following variables:\n\nDate\n\nYear\n\nMonth\n\nAverage Temperature\n\nTemperature Count\n\nAverage Pressure\n\nPressure Count\n\nAverage Melted Precipitation\n\nPrecipitation Count\n\nData package summary\nData package metadata\nLink to data (CSV):\nhttps://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-pal.189.8&entityid=ab357b4c92531a07d98ff1c4f4809a1e\n\n\n\nThe third dataset contains monthly sea ice area from the region around the Palmer Station, Antarctica, with the following variables:\n\nYear\nMonth\nArea\n\nNote: this data is formatted with months as columns, years as rows, and cells filled with the corresponding area.\nData package summary\nData package metadata\nLink to data (TXT):\nhttps://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-pal.34.7&entityid=0fccb4e99aaa0c0cc85c23284288ec81\n\n\n\nThe fourth dataset contains Adelie penguin adult and chick counts\n\nstudyName\n\nDate GMT\n\nTime GMT\n\nIsland\n\nColony\n\nAdults\n\nChicks\n\nData package summary\nData package metadata\nLink to data (CSV):\nhttps://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-pal.88.8&entityid=b4062890db09a72628786650dacfbf1f\n\n\n\n\nThis project is released under the GNU General Public License v3.0. Read it here.",
     "crumbs": [
       "Home"
     ]
@@ -731,7 +766,17 @@
     "href": "index.html#workshop-on-using-the-targets-issa-workflow",
     "title": "{targets} iSSA workshop",
     "section": "",
-    "text": "{targets} iSSA workflow\nThis workshop is based on the reproducible workflows workshop originally developed for a workshop at CSEE 2023 by:\n\nAlec L. Robitaille (Memorial University of Newfoundland and Labrador)\nIsabella C. Richmond (Concordia University)",
+    "text": "This workshop is focused on developing familiarity with using the {targets} iSSA workflow. The workflow is intended as a detailed example to be used alongside the How To iSSA online book. The details of iSSAs and how they are theory implemented in the workflow is well covered there, so this workshop centers on the code required to run the example iSSA and adapt it to your own data.\nThis workshop is based on the reproducible workflows workshop originally developed for a workshop at CSEE 2023 by:\n\nAlec L. Robitaille (Memorial University of Newfoundland and Labrador)\nIsabella C. Richmond (Concordia University)",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#why-targets",
+    "href": "index.html#why-targets",
+    "title": "{targets} iSSA workshop",
+    "section": "",
+    "text": "The {targets} package developed by Will Landau and peer reviewed by rOpenSci is an R package for defining pipelines/workflows, coordinating interdependent analytical steps, input and output data files, and iterating across patterns. Each step in a defined pipeline is saved and only rerun when preceeding steps have been modified, saving us and energy only rerunning what needs to. These features are incredibly well suited to iSSAs given their resource intensiveness and levels of analysis eg. individuals, seasons, etc.\n{targets} emphasizes a function oriented programming style that improves on scipt based workflows. Logical chunks of code can be written as functions that can be reused throughout and across projects. See the Functions chapter in the {targets} manual.\nBranching/iterating across patterns, eg. lists of files or data.frame columns, is flexible and built in. This means our functions can be typically built for one chunk (eg. a single individual) which is easily applied over every level using {targets}’s dynamic branching. See the Dynamic branching chapter in the {targets} manual.\nOnce the pipeline is defined, {targets} orchestrates the tasks. No need to sit at the computer running a series of scripts - just start the pipeline and go for a walk outside or make yourself cup of coffee/tea.",
     "crumbs": [
       "Home"
     ]
@@ -857,34 +902,34 @@
   {
     "objectID": "resources/04-renv.html",
     "href": "resources/04-renv.html",
-    "title": "{renv}",
+    "title": "renv",
     "section": "",
     "text": "The {renv} documentation and vignettes have lots of information on {renv}. We’ll point out the most relevant pages and links, because {renv} can be used for a wide variety of uses on different systems (local machine, Docker, etc.).\n\n\n\n\nThis vignette overviews what {renv} is, and how to use it.\nIt walks us through the workflow of {renv}:\n\n\nCall renv::init() to initialize a new project-local environment with a private R library,\nWork in the project as normal, installing and removing new R packages as they are needed in the project,\nCall renv::snapshot() to save the state of the project library to the lockfile (called renv.lock),\nContinue working on your project, installing and updating R packages as needed.\nCall renv::snapshot() again to save the state of your project library if your attempts to update R packages were successful, or call renv::restore() to revert to the previous state as encoded in the lockfile if your attempts to update packages introduced some new problems.\n\n\nIt also outlines important caveats:\n\n{renv} only solves one small part of the reproducible problem: recording the version of R and R packages that are used in a project\n\nIt does not help if a package version becomes no longer available in the future.\nIt also does not help if a system dependency is missing on the computer attempting to recover an {renv} environment. The system dependency is external and needs to be installed for the project to run successfully.\n\n\n\nHow do you share your project that has an {renv} environment with other people? This vignette walks through the details of collaborating with other users when you have an isolated environment.\n\n\n\nFrequently asked questions about {renv}, a great place to start when troubleshooting {renv}.\n\n\n\n\n\n\nA video by {renv} author Kevin Ushey, outlining why {renv} is important and how to use it.\n\nCode repository: https://github.com/kevinushey/2020-rstudio-conf\n\n\n\n\nDemo on how to set up {renv} in existing projects with biology professor/statistician.",
     "crumbs": [
       "Resources",
-      "[Vignettes](https://rstudio.github.io/renv/articles/)"
+      "renv"
     ]
   },
   {
     "objectID": "resources/04-renv.html#vignettes",
     "href": "resources/04-renv.html#vignettes",
-    "title": "{renv}",
+    "title": "renv",
     "section": "",
     "text": "This vignette overviews what {renv} is, and how to use it.\nIt walks us through the workflow of {renv}:\n\n\nCall renv::init() to initialize a new project-local environment with a private R library,\nWork in the project as normal, installing and removing new R packages as they are needed in the project,\nCall renv::snapshot() to save the state of the project library to the lockfile (called renv.lock),\nContinue working on your project, installing and updating R packages as needed.\nCall renv::snapshot() again to save the state of your project library if your attempts to update R packages were successful, or call renv::restore() to revert to the previous state as encoded in the lockfile if your attempts to update packages introduced some new problems.\n\n\nIt also outlines important caveats:\n\n{renv} only solves one small part of the reproducible problem: recording the version of R and R packages that are used in a project\n\nIt does not help if a package version becomes no longer available in the future.\nIt also does not help if a system dependency is missing on the computer attempting to recover an {renv} environment. The system dependency is external and needs to be installed for the project to run successfully.\n\n\n\nHow do you share your project that has an {renv} environment with other people? This vignette walks through the details of collaborating with other users when you have an isolated environment.\n\n\n\nFrequently asked questions about {renv}, a great place to start when troubleshooting {renv}.",
     "crumbs": [
       "Resources",
-      "[Vignettes](https://rstudio.github.io/renv/articles/)"
+      "renv"
     ]
   },
   {
     "objectID": "resources/04-renv.html#videos",
     "href": "resources/04-renv.html#videos",
-    "title": "{renv}",
+    "title": "renv",
     "section": "",
     "text": "A video by {renv} author Kevin Ushey, outlining why {renv} is important and how to use it.\n\nCode repository: https://github.com/kevinushey/2020-rstudio-conf\n\n\n\n\nDemo on how to set up {renv} in existing projects with biology professor/statistician.",
     "crumbs": [
       "Resources",
-      "[Vignettes](https://rstudio.github.io/renv/articles/)"
+      "renv"
     ]
   },
   {

@@ -81,7 +81,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exercises/projects.html">Exercises</a></li><li class="breadcrumb-item"><a href="../exercises/renv.html">{renv}</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      {targets} iSSA workflow workshop
+      </li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -203,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/renv.html" class="sidebar-item-text sidebar-link active">
+  <a href="../exercises/renv.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">{renv}</span></a>
   </div>
 </li>
@@ -334,20 +336,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#renv" id="toc-renv" class="nav-link active" data-scroll-target="#renv">{renv}</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a>
-  <ul class="collapse">
-  <li><a href="#exercise-setting-up-renv" id="toc-exercise-setting-up-renv" class="nav-link" data-scroll-target="#exercise-setting-up-renv">Exercise: setting up {renv}</a></li>
-  </ul></li>
-  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a>
-  <ul class="collapse">
-  <li><a href="#exercise-using-renv" id="toc-exercise-using-renv" class="nav-link" data-scroll-target="#exercise-using-renv">Exercise: using {renv}</a></li>
-  </ul></li>
-  <li><a href="#sharing" id="toc-sharing" class="nav-link" data-scroll-target="#sharing">Sharing</a>
-  <ul class="collapse">
-  <li><a href="#bonus" id="toc-bonus" class="nav-link" data-scroll-target="#bonus">Bonus</a></li>
-  </ul></li>
+  <li><a href="#draw-your-project" id="toc-draw-your-project" class="nav-link" data-scroll-target="#draw-your-project">Draw your project</a></li>
+  <li><a href="#write-it-out-in-pseudocode" id="toc-write-it-out-in-pseudocode" class="nav-link" data-scroll-target="#write-it-out-in-pseudocode">Write it out in pseudocode</a></li>
+  <li><a href="#overview-of-targets-issa-workflow" id="toc-overview-of-targets-issa-workflow" class="nav-link" data-scroll-target="#overview-of-targets-issa-workflow">Overview of {targets} iSSA workflow</a></li>
+  <li><a href="#start-with-penguins" id="toc-start-with-penguins" class="nav-link" data-scroll-target="#start-with-penguins">Start with penguins</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -358,50 +352,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="renv" class="level1">
-<h1>{renv}</h1>
-<p>{renv} helps us create more reproducible and shareable projects by allowing us to run code on different machines, across time, by different people. It essentially takes the packages used in your project and records their versions in a file that you can update as you develop the project. When you come back to your project, or share it with someone else, they are using the same versions of packages and R that you were.</p>
-<p>The three main functions used when working with {renv} are:</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<section id="draw-your-project" class="level2">
+<h2 class="anchored" data-anchor-id="draw-your-project">Draw your project</h2>
+<p>On a piece of paper, draw your iSSA project (or another project if you haven’t started an iSSA yet). List input data, main analysis steps, models and figures. We’ll get more specific with code and functions later, so just start with general ideas. Connect dependencies with arrows and note where you would want to branch by eg. individiual or season.</p>
+</section>
+<section id="write-it-out-in-pseudocode" class="level2">
+<h2 class="anchored" data-anchor-id="write-it-out-in-pseudocode">Write it out in pseudocode</h2>
+<p>In a text file, adapt your drawing into a workflow using pseudocode. For example:</p>
 <ul>
-<li><p><code>init()</code> for setting up project to use {renv} for the first time</p></li>
-<li><p><code>snapshot()</code> for recording versions of packages currently installed in the project in the file <code>renv.lock</code></p></li>
-<li><p><code>restore()</code> for restoring a project’s package versions to match the versions recorded by {renv} from the file <code>renv.lock</code></p></li>
+<li>data = read csv</li>
+<li>filter data min/max year</li>
+<li>resample filter data</li>
+<li>model resampled data</li>
+<li>plot model predictions</li>
 </ul>
-<p>Note: {renv} will not install a different version of R, or any other system dependencies that are required. However, {renv} will warn if the <code>renv.lock</code> lists a version of R that differs from your current version of R. For system dependencies that are required but not installed, R will fail.</p>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<p>The first time you set up a project with {renv}, use the function <code>init()</code>. <code>init()</code> writes a file to the root of your project called <code>renv.lock</code> that tracks the versions and dependencies of R packages installed and the version of R itself. This is a simple text file, so feel free to open it up (but don’t edit) in a text editor.</p>
-<section id="exercise-setting-up-renv" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-setting-up-renv">Exercise: setting up {renv}</h3>
-<p>Instruction: in the console of your project, initialize {renv} with <code>init()</code>.</p>
 </section>
+<section id="overview-of-targets-issa-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-targets-issa-workflow">Overview of {targets} iSSA workflow</h2>
+<p>As a group, head over to the <a href="https://github.com/robitalec/targets-issa/">{targets} iSSA workflow</a> to walkthrough the workflow’s steps.</p>
 </section>
-<section id="usage" class="level2">
-<h2 class="anchored" data-anchor-id="usage">Usage</h2>
-<p>As you work on your project and add or update packages, record your packages used and their version with <code>snapshot()</code>. This will edit the <code>renv.lock</code> file with new versions and packages that describe the package’s environment.</p>
-<p>You can always check the status of your {renv} project with <code>status()</code> to see which packages are installed but not recorded, or which packages are recorded but no longer used.</p>
-<section id="exercise-using-renv" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-using-renv">Exercise: using {renv}</h3>
-<p>Instruction: install a new package with <code>install.packages()</code> then run <code>status()</code>. Follow {renv}’s recommendations to either save (<code>snapshot()</code>) or discard (<code>restore()</code>) these potential changes to your project’s environment.</p>
-</section>
-</section>
-<section id="sharing" class="level2">
-<h2 class="anchored" data-anchor-id="sharing">Sharing</h2>
-<p><code>snapshot()</code> is used to save the current state of your project while <code>restore()</code> to recover the state of your project as it was last saved. When you download someone else’s project, you can use <code>restore()</code> to retrieve and install the versions of packages in the project that were recorded.</p>
-<p>Before sharing your project (and regularly while you work even if not sharing), make sure your project is up to date by running <code>snapshot()</code>.</p>
-<p>To restore from an <code>renv.lock</code> file, simply run <code>restore()</code>.</p>
-<section id="bonus" class="level3">
-<h3 class="anchored" data-anchor-id="bonus">Bonus</h3>
-<p>Git is really helpful when working with {renv} because we can track the <code>renv.lock</code> file’s history for changes through time. See these examples:</p>
-<ul>
-<li><code>robitalec/targets-issa</code>: <a href="https://github.com/robitalec/targets-issa/blob/main/renv.lock"><code>renv.lock</code></a> and <a href="https://github.com/robitalec/targets-issa/commits/main/renv.lock">history</a></li>
-<li><code>robitalec/prepare-locs</code>: <a href="https://github.com/robitalec/prepare-locs/blob/main/renv.lock"><code>renv.lock</code></a> and <a href="https://github.com/robitalec/prepare-locs/commits/main/renv.lock">history</a></li>
-</ul>
-<p>Use <code>renv::update()</code> to update the packages in your lock file.</p>
-<p>You can also use {renv} to track Python dependencies required by your project too. See this vignette for more details: <a href="https://rstudio.github.io/renv/articles/python.html" class="uri">https://rstudio.github.io/renv/articles/python.html</a></p>
+<section id="start-with-penguins" class="level2">
+<h2 class="anchored" data-anchor-id="start-with-penguins">Start with penguins</h2>
+<p>Before we dive into the {targets} iSSA workflow any further, let’s start with simpler examples based on the palmerpenguins dataset.</p>
+<ol type="1">
+<li><a href="exercises/projects">Projects</a></li>
+<li><a href="exercises/functions/01-functions-introduction.qmd">Exercises</a></li>
+<li><a href="exercises/targets/01-targets-setup.qmd">{targets}</a></li>
+</ol>
 
 
-</section>
 </section>
 </section>
 

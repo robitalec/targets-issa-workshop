@@ -273,19 +273,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./resources/03-targets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><a href="https://books.ropensci.org/targets/help.html">Help</a></span></a>
+ <span class="menu-text">targets</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./resources/04-renv.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><a href="https://rstudio.github.io/renv/articles/">Vignettes</a></span></a>
+ <span class="menu-text">renv</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./resources/05-conflicted.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">05 Conflicted</span></a>
+ <span class="menu-text">conflicted</span></a>
   </div>
 </li>
       </ul>
@@ -371,6 +371,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#targets-issa-workshop" id="toc-targets-issa-workshop" class="nav-link active" data-scroll-target="#targets-issa-workshop">{targets} iSSA workshop</a>
   <ul class="collapse">
   <li><a href="#workshop-on-using-the-targets-issa-workflow" id="toc-workshop-on-using-the-targets-issa-workflow" class="nav-link" data-scroll-target="#workshop-on-using-the-targets-issa-workflow">Workshop on using the {targets} iSSA workflow</a></li>
+  <li><a href="#why-targets" id="toc-why-targets" class="nav-link" data-scroll-target="#why-targets">Why {targets}?</a></li>
   <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
   <ul class="collapse">
@@ -394,12 +395,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>{targets} iSSA workshop</h1>
 <section id="workshop-on-using-the-targets-issa-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="workshop-on-using-the-targets-issa-workflow">Workshop on using the {targets} iSSA workflow</h2>
-<p><a href="https://github.com/robitalec/targets-issa">{targets} iSSA workflow</a></p>
+<p>This workshop is focused on developing familiarity with using the <a href="https://github.com/robitalec/targets-issa">{targets} iSSA workflow</a>. The workflow is intended as a detailed example to be used alongside the <a href="https://issa-guild.github.io/book">How To iSSA online book</a>. The details of iSSAs and how they are theory implemented in the workflow is well covered there, so this workshop centers on the code required to run the example iSSA and adapt it to your own data.</p>
 <p>This workshop is based on the <a href="https://github.com/robitalec/reproducible-workflows-workshop">reproducible workflows workshop</a> originally developed for a <a href="https://github.com/robitalec/2023-CSEE-reproducible-workflows-workshop">workshop</a> at <a href="https://www.beepeg2023.ca/">CSEE 2023</a> by:</p>
 <ul>
 <li>Alec L. Robitaille (Memorial University of Newfoundland and Labrador)</li>
 <li>Isabella C. Richmond (Concordia University)</li>
 </ul>
+</section>
+<section id="why-targets" class="level2">
+<h2 class="anchored" data-anchor-id="why-targets">Why {targets}?</h2>
+<p>The {targets} package developed by Will Landau and peer reviewed by rOpenSci is an R package for defining pipelines/workflows, coordinating interdependent analytical steps, input and output data files, and iterating across patterns. Each step in a defined pipeline is saved and only rerun when preceeding steps have been modified, saving us and energy only rerunning what needs to. These features are incredibly well suited to iSSAs given their resource intensiveness and levels of analysis eg. individuals, seasons, etc.</p>
+<p>{targets} emphasizes a function oriented programming style that improves on scipt based workflows. Logical chunks of code can be written as functions that can be reused throughout and across projects. See the <a href="https://books.ropensci.org/targets/functions.html">Functions</a> chapter in the {targets} manual.</p>
+<p>Branching/iterating across patterns, eg. lists of files or data.frame columns, is flexible and built in. This means our functions can be typically built for one chunk (eg. a single individual) which is easily applied over every level using {targets}’s dynamic branching. See the <a href="https://books.ropensci.org/targets/dynamic.html">Dynamic branching</a> chapter in the {targets} manual.</p>
+<p>Once the pipeline is defined, {targets} orchestrates the tasks. No need to sit at the computer running a series of scripts - just start the pipeline and go for a walk outside or make yourself cup of coffee/tea.</p>
 </section>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
