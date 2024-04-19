@@ -12,12 +12,12 @@ project:
     - "!paper/manuscript.qmd"
 
 website:
-  title: "Reproducible workflows workshop"
+  title: "{targets} iSSA workflow workshop"
 
   sidebar:
     tools:
       - icon: github
-        href: https://github.com/robitalec/reproducible-workflows-workshop
+        href: https://github.com/robitalec/targets-issa-workshop
     contents:
       - text: "Home"
         file: index.qmd
