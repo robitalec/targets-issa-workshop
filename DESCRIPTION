@@ -1,5 +1,5 @@
-Package: CSEE.reproducible.workflows.workshop
-Title: Workshop for CSEE 2023 On Reproducible Workflows In R
+Package: reproducible.workflows.workshop
+Title: Reproducible Workflows Workshop
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Alec L.",
