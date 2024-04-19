@@ -16,9 +16,9 @@ at [CSEE 2023](https://www.beepeg2023.ca/) by:
 
 ## Why {targets}?
 
-The {targets} package developed by [Will Landau](https://github.com/wlandau/) and peer reviewed by [rOpenSci](https://ropensci.org/) is an R package for defining pipelines/workflows, coordinating interdependent analytical steps, input and output data files, and iterating across patterns. Each step in a defined pipeline is saved and only rerun when preceeding steps have been modified, saving us and energy only rerunning what needs to. These features are incredibly well suited to iSSAs given their resource intensiveness and levels of analysis eg. individuals, seasons, etc. 
+The {targets} package developed by [Will Landau](https://github.com/wlandau/) and peer reviewed by [rOpenSci](https://ropensci.org/) is an R package for defining pipelines/workflows, coordinating interdependent analytical steps, input and output data files, and iterating across patterns. Each step in a defined pipeline is saved and only rerun when preceding steps have been modified, saving us and energy only rerunning what needs to. These features are incredibly well suited to iSSAs given their resource intensiveness and levels of analysis eg. individuals, seasons, etc. 
 
-{targets} emphasizes a function oriented programming style that improves on scipt based workflows. Logical chunks of code can be written as functions that can be reused throughout and across projects. See the [Functions](https://books.ropensci.org/targets/functions.html) chapter in the {targets} manual. 
+{targets} emphasizes a function oriented programming style that improves on script based workflows. Logical chunks of code can be written as functions that can be reused throughout and across projects. See the [Functions](https://books.ropensci.org/targets/functions.html) chapter in the {targets} manual. 
 
 Branching/iterating across patterns, eg. lists of files or data.frame columns, is flexible and built in. This means our functions can be typically built for one chunk (eg. a single individual) which is easily applied over every level using {targets}'s dynamic branching. See the [Dynamic branching](https://books.ropensci.org/targets/dynamic.html) chapter in the {targets} manual. 
 
