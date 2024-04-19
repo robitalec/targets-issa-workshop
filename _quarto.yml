@@ -3,8 +3,6 @@ project:
   output-dir: docs
   execute-dir: project
   resources:
-    - templates/README-dataset-template.md
-    - templates/README-data-project_template.md
     - templates/README-paper-template.md
     - templates/test_function.R
   render:
