@@ -1,0 +1,27 @@
+# Introduction
+
+## Draw your project
+
+On a piece of paper, draw your iSSA project (or another project if you haven't started an iSSA yet). List input data, main analysis steps, models and figures. We'll get more specific with code and functions later, so just start with general ideas. Connect dependencies with arrows and note where you would want to branch by eg. individiual or season. 
+
+## Write it out in pseudocode
+
+In a text file, adapt your drawing into a workflow using pseudocode. For example:
+
+- data = read csv
+- filter data min/max year
+- resample filter data
+- model resampled data
+- plot model predictions
+
+## Overview of {targets} iSSA workflow 
+
+As a group, head over to the [{targets} iSSA workflow](https://github.com/robitalec/targets-issa/) to walkthrough the workflow's steps. 
+
+## Start with penguins
+
+Before we dive into the {targets} iSSA workflow any further, let's start with simpler examples based on the palmerpenguins dataset. 
+
+1. [Projects](exercises/projects)
+1. [Exercises](exercises/functions/01-functions-introduction.qmd)
+1. [{targets}](exercises/targets/01-targets-setup.qmd)
